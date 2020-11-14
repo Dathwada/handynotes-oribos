@@ -12,7 +12,7 @@ private.locale = L
 
 addon.constants = private.constants
 
-_G.HandyNotes_CovenantSanctum = addon
+_G.HandyNotes_Oribos = addon
 
 local IsQuestCompleted = C_QuestLog.IsQuestFlaggedCompleted
 local constantsicon = private.constants.icon
@@ -101,6 +101,7 @@ local function SetTooltip(tooltip, point)
         end
         if point.portal or point.tpplatform then
             tooltip:AddLine(point.label)
+            tooltip:AddLine(point.note)
         end
         if point.mail then
             tooltip:AddLine(L["SetTooltip_mailbox"])
