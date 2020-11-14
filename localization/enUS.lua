@@ -105,9 +105,7 @@ L["handler_tooltip_TNTIER"] = "Tier %s of the travel network."
 ----------------------------------------------------------------------------------------------------
 
 L["Portal to Orgrimmar"] = true
-L["Kalimdor, Durotar"] = true
 L["Portal to Stormwind"] = true
-L["Eastern Kingdoms, Elwynn Forest"] = true
 L["To Ring of Transference"] = true
 L["To Ring of Fates"] = true
 L["Into the Maw"] = true

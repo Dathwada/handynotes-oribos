@@ -9,10 +9,14 @@ local L = private.locale
 -----------------------------------------------LOCALS-----------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
+local function GetMapNames(id1, id2)
+    return format("%s, %s", C_Map.GetMapInfo(id1).name, C_Map.GetMapInfo(id2).name)
+end
+
 local PtoOG = L["Portal to Orgrimmar"]
-local Durotar = L["Kalimdor, Durotar"]
+local Durotar = GetMapNames(12, 1)
 local PtoSW = L["Portal to Stormwind"]
-local ElwynnForest = L["Eastern Kingdoms, Elwynn Forest"]
+local ElwynnForest = GetMapNames(13, 37)
 local RingTransference = L["To Ring of Transference"]
 local RingFates = L["To Ring of Fates"]
 local IntoTheMaw = L["Into the Maw"]

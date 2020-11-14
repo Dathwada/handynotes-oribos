@@ -107,9 +107,7 @@ L["handler_tooltip_TNTIER"] = "Stufe %s des Reisenetzwerks."
 --==========================================SHADOWLANDS===========================================--
 
 L["Portal to Orgrimmar"] = "Portal nach Orgrimmar"
-L["Kalimdor, Durotar"] = true
 L["Portal to Stormwind"] = "Portal nach Sturmwind"
-L["Eastern Kingdoms, Elwynn Forest"] = "Die Östlichen Königreiche, Wald von Elwynn"
 L["To Ring of Transference"] = "Zum Ring der Übertragung"
 L["To Ring of Fates"] = "Zum Ring der Schicksale"
 L["Into the Maw"] = "In den Schlund"
