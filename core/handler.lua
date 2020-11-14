@@ -303,7 +303,7 @@ local currentMapID = nil
         if (point.stablemaster and not private.db.show_stablemaster) then return false; end
         if (point.trainer and not private.db.show_trainer) then return false; end
         if (point.transmogrifier and not private.db.show_transmogrifier) then return false; end
-        if (point.vendor and not private.db.show_vendor) then return false; end
+        if ((point.vendor or point.anvil) and not private.db.show_vendor) then return false; end
         if (point.void and not private.db.show_void) then return false; end
     else
         return true
