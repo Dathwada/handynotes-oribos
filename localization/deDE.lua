@@ -56,7 +56,7 @@ L["config_vendor"] = "Händler"
 L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."
 
 L["config_void"] = "Leerenlager"
-L["config__desc"] = "Zeigt die Position des Leerenlagers an."
+L["config_void_desc"] = "Zeigt die Position des Leerenlagers an."
 
 L["config_easy_waypoints"] = "Vereinfachte Wegpunkte"
 L["config_easy_waypoints_desc"] = "Aktiviert die vereinfachte Wegpunkterstellung. \nErlaubt es per Rechtsklick einen Wegpunkt zu setzen und per STRG + Rechtsklick mehr Optionen aufzurufen."

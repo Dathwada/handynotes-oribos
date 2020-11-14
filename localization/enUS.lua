@@ -56,7 +56,7 @@ L["config_vendor"] = "Vendor"
 L["config_vendor_desc"] = "Show the vendor locations."
 
 L["config_void"] = "Void Storage"
-L["config__desc"] = "Show the void storage locations."
+L["config_void_desc"] = "Show the void storage locations."
 
 L["config_easy_waypoints"] = "Easy Waypoints"
 L["config_easy_waypoints_desc"] = "Activates simplified waypoint creation. \nAllows you to set a waypoint by right-clicking and access to more options by CTRL + right-clicking."
