@@ -270,19 +270,20 @@ local currentMapID = nil
         return iter, private.DB.points[uMapID], nil
     end
     function private:ShouldShow(coord, point, currentMapID)
+    if not private.db.force_nodes then
         if (private.hidden[currentMapID] and private.hidden[currentMapID][coord]) then
             return false
         end
         -- this will check if any node is for a specific class
-        if (point.class and point.class ~= select(2, UnitClass("player")) and not private.db.force_nodes) then
+        if (point.class and point.class ~= select(2, UnitClass("player"))) then
             return false
         end
         -- this will check if any node is for a specific faction
-        if (point.faction and point.faction ~= select(1, UnitFactionGroup("player")) and not private.db.force_nodes) then
+        if (point.faction and point.faction ~= select(1, UnitFactionGroup("player"))) then
             return false
         end
         -- this will check if any node is for a specific covenant
-        if (point.covenant and point.covenant ~= C_Covenants.GetActiveCovenantID() and not private.db.force_nodes) then
+        if (point.covenant and point.covenant ~= C_Covenants.GetActiveCovenantID()) then
             return false
         end
         -- this will check if the node is for a specific profession
@@ -304,6 +305,9 @@ local currentMapID = nil
         if (point.transmogrifier and not private.db.show_transmogrifier) then return false; end
         if (point.vendor and not private.db.show_vendor) then return false; end
         if (point.void and not private.db.show_void) then return false; end
+    else
+        return true
+    end
         return true
     end
 end
