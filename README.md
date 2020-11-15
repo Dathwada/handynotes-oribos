@@ -29,4 +29,4 @@
 
 ## Issues and Suggestion
 
-Please write a comment
+Please go to [Issues](https://github.com/Dathwada/handynotes-oribos/issues) to submit any issue found or any suggestion.
