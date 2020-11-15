@@ -24,19 +24,19 @@ L["config_auctioneer"] = "Auktionator"
 L["config_auctioneer_desc"] = "Zeigt die Position des Auktionators an."
 
 L["config_banker"] = "Bankiers"
-L["config_banker_desc"] = "Zeigt die Position der Bankiers an."
+L["config_banker_desc"] = "Zeigt die Positionen der Bankiers an."
 
 L["config_barber"] = "Barbier"
 L["config_barber_desc"] = "Zeigt die Position des Barbiers an."
 
-L["config_innkeeper"] = "Gastwirte"
-L["config_innkeeper_desc"] = "Zeigt die Positionen der Gastwirte an."
+L["config_innkeeper"] = "Gastwirt"
+L["config_innkeeper_desc"] = "Zeigt die Position des Gastwirte an."
 
 L["config_mail"] = "Briefkästen"
-L["config_mail_desc"] = "Zeigt die Positionen der Briefkäasten an."
+L["config_mail_desc"] = "Zeigt die Positionen der Briefkästen an."
 
-L["config_portal"] = "Portale"
-L["config_portal_desc"] = "Zeigt die Positionen der Portal an."
+L["config_portal"] = "Portal"
+L["config_portal_desc"] = "Zeigt die Position des Portals an."
 
 L["config_tpplatforms"] = "Teleportplattformen"
 L["config_tpplatforms_desc"] = "Zeigt die Positionen der Teleportplattformen an."
@@ -47,13 +47,13 @@ L["config_reforge"] = "Rüstungsverbesserer"
 L["config_reforge_desc"] = "Zeigt die Position des Rüstungsverbesserers an."
 
 L["config_stablemaster"] = "Stallmeister"
-L["config_stablemaster_desc"] = "Zeigt die Positionen des Stallmeisters an."
+L["config_stablemaster_desc"] = "Zeigt die Position des Stallmeisters an."
 
 L["config_trainer"] = "Berufslehrer"
 L["config_trainer_desc"] = "Zeigt die Positionen der Berufslehrer an."
 
 L["config_transmogrifier"] = "Transmogrifizierer"
-L["config_transmogrifier_desc"] = "Zeigt die Positionen des Transmogrifizierers an."
+L["config_transmogrifier_desc"] = "Zeigt die Position des Transmogrifizierers an."
 
 L["config_vendor"] = "Händler"
 L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."

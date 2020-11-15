@@ -30,13 +30,13 @@ L["config_barber"] = "Barber"
 L["config_barber_desc"] = "Show the barber location."
 
 L["config_innkeeper"] = "Innkeeper"
-L["config_innkeeper_desc"] = "Show the innkeeper locations."
+L["config_innkeeper_desc"] = "Show the innkeeper location."
 
 L["config_mail"] = "Mailbox"
 L["config_mail_desc"] = "Show the mailbox locations."
 
 L["config_portal"] = "Portal"
-L["config_portal_desc"] = "Show the portal locations."
+L["config_portal_desc"] = "Show the portal location."
 
 L["config_tpplatforms"] = "Teleport Platform"
 L["config_tpplatforms_desc"] = "Show the teleport platform locations."
@@ -44,22 +44,22 @@ L["config_tpplatforms_desc"] = "Show the teleport platform locations."
 L["config_travelguide_note"] = "|cFFFF0000*Already active through HandyNotes: TravelGuide.|r"
 
 L["config_reforge"] = "Armor Enhancer"
-L["config_reforge_desc"] = "Show the armor enhancer locations."
+L["config_reforge_desc"] = "Show the armor enhancer location."
 
 L["config_stablemaster"] = "Stable Master"
-L["config_stablemaster_desc"] = "Show the stable master locations."
+L["config_stablemaster_desc"] = "Show the stable master location."
 
 L["config_trainer"] = "Profession Trainer"
 L["config_trainer_desc"] = "Show the profession trainer locations."
 
 L["config_transmogrifier"] = "Transmogrifier"
-L["config_transmogrifier_desc"] = "Show the transmogrifier locations."
+L["config_transmogrifier_desc"] = "Show the transmogrifier location."
 
 L["config_vendor"] = "Vendor"
 L["config_vendor_desc"] = "Show the vendor locations."
 
 L["config_void"] = "Void Storage"
-L["config_void_desc"] = "Show the void storage locations."
+L["config_void_desc"] = "Show the void storage location."
 
 L["config_easy_waypoints"] = "Easy Waypoints"
 L["config_easy_waypoints_desc"] = "Activates simplified waypoint creation. \nAllows you to set a waypoint by right-clicking and access to more options by CTRL + right-clicking."
