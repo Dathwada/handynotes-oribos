@@ -26,6 +26,9 @@ L["config_auctioneer_desc"] = "Show the auctioneer location."
 L["config_banker"] = "Banker"
 L["config_banker_desc"] = "Show the banker locations."
 
+L["config_barber"] = "Barber"
+L["config_barber_desc"] = "Show the barber location."
+
 L["config_innkeeper"] = "Innkeeper"
 L["config_innkeeper_desc"] = "Show the innkeeper locations."
 

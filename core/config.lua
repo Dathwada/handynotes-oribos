@@ -151,7 +151,7 @@ config.options = {
 }
 
 local icongroup = {
-    "banker", "innkeeper", "mail", "reforge",
+    "banker", "barber", "innkeeper", "mail", "reforge",
     "stablemaster", "trainer", "transmogrifier", "vendor", "void"
 }
 

@@ -47,7 +47,7 @@ local function SetIcon(point)
     local icon_key
 
     for i, k in ipairs({
-        "auctioneer", "anvil", "banker", "innkeeper", "mail", "portal",
+        "auctioneer", "anvil", "banker", "barber", "innkeeper", "mail", "portal",
         "reforge", "stablemaster", "trainer", "transmogrifier", "tpplatform", "vendor", "void"
     }) do
         if point[k] then icon_key = k end
@@ -296,6 +296,7 @@ local currentMapID = nil
 --        end
         if (point.auctioneer and not private.db.show_auctioneer) then return false; end
         if (point.banker and not private.db.show_banker) then return false; end
+        if (point.barber and not private.db.show_barber) then return false; end
         if (point.innkeeper and not private.db.show_innkeeper) then return false; end
         if (point.mail and not private.db.show_mail) then return false; end
         if (point.portal and (not private.db.show_portal or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false; end

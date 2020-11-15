@@ -85,6 +85,7 @@ DB.points = {
     [67485033] = { innkeeper=true, npc=156688 },
 
     -- HALL OF CURIOSITIES
+    [64456418] = { barber=true, npc=156735 },
     [65196756] = { vendor=true, npc=156769 },
     [64596987] = { transmogrifier=true, npc=156663 },
     [64407055] = { void=true, npc=156664 },

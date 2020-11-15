@@ -18,6 +18,7 @@ constants.defaults = {
 
         show_auctioneer = true,
         show_banker = true,
+        show_barber = true,
         show_innkeeper = true,
         show_mail = true,
         show_portal = true,
@@ -70,6 +71,7 @@ constants.icon = {
     auctioneer      = "Interface\\MINIMAP\\TRACKING\\Auctioneer",
     anvil           = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\anvil",
     banker          = "Interface\\MINIMAP\\TRACKING\\Banker",
+    barber          = "Interface\\MINIMAP\\TRACKING\\Barbershop",
 --    flightmaster    = "Interface\\MINIMAP\\TRACKING\\FlightMaster",
 --    food            = "Interface\\MINIMAP\\TRACKING\\Food",
     innkeeper       = "Interface\\MINIMAP\\TRACKING\\Innkeeper",

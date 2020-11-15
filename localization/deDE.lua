@@ -26,6 +26,9 @@ L["config_auctioneer_desc"] = "Zeigt die Position des Auktionators an."
 L["config_banker"] = "Bankiers"
 L["config_banker_desc"] = "Zeigt die Position der Bankiers an."
 
+L["config_barber"] = "Barbier"
+L["config_barber_desc"] = "Zeigt die Position des Barbiers an."
+
 L["config_innkeeper"] = "Gastwirte"
 L["config_innkeeper_desc"] = "Zeigt die Positionen der Gastwirte an."
 
