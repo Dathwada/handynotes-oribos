@@ -33,9 +33,11 @@ constants.defaults = {
 
         easy_waypoint = true,
 
-        dev = false,
         force_nodes = false,
         show_prints = false,
+    },
+    global = {
+        dev = false,
     },
     char = {
         hidden = {
