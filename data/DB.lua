@@ -34,41 +34,41 @@ DB.points = {
     -- HALL OF SHAPES
     -- Juwe
     [34574459] = { vendor=true, npc=156733 },
-    [35204130] = { trainer=true, npc=156670 }, -- , profession=755
+    [35204130] = { trainer=true, npc=156670, profession=755 },
     -- Engineer
     [37684297] = { vendor=true, npc=156692 },
-    [38074470] = { trainer=true, npc=156691 }, -- , profession=202
+    [38074470] = { trainer=true, npc=156691 , profession=202 },
     [38334378] = { auctioneer=true, npc=173571, profession=202 },
     -- Inscription
     [35963855] = { vendor=true, npc=156732 },
-    [36503673] = { trainer=true, npc=156685 }, -- , profession=773
+    [36503673] = { trainer=true, npc=156685, profession=773 },
     [37193554] = { vendor=true, npc=164736 },
     -- Alchemy
     [38873943] = { vendor=true, npc=156689 },
-    [39244037] = { trainer=true, npc=156687 }, -- , profession=171
+    [39244037] = { trainer=true, npc=156687, profession=171 },
     -- Herbalism
-    [40233828] = { trainer=true, npc=156686 }, -- , profession=182
+    [40233828] = { trainer=true, npc=156686, profession=182 },
 
     [38653356] = { anvil=true, npc=156777 },
     -- Mining
-    [39353297] = { trainer=true, npc=156668 }, -- , profession=186
+    [39353297] = { trainer=true, npc=156668, profession=186 },
     -- Blacksmith
-    [40473150] = { trainer=true, npc=156666 }, -- , profession=164
+    [40473150] = { trainer=true, npc=156666, profession=164 },
     -- Skinning
-    [42162811] = { trainer=true, npc=156667 }, -- , profession=393
+    [42162811] = { trainer=true, npc=156667, profession=393 },
     -- Leatherworking
-    [42292666] = { trainer=true, npc=156669 }, -- , profession=165
+    [42292666] = { trainer=true, npc=156669, profession=165 },
     [44502653] = { vendor=true, npc=156696 },
     -- Tailor
-    [45493182] = { trainer=true, npc=156681 }, -- , profession=197
+    [45493182] = { trainer=true, npc=156681, profession=197 },
     -- Cooking
     [46232637] = { vendor=true, npc=168353 },
     [46202560] = { trainer=true, npc=156672 }, -- , profession=185
     -- Fishing
-    [46832259] = { vendor=true, npc=156690 }, -- , profession=356
-    [47542360] = { trainer=true, npc=156671 },
+    [46832259] = { vendor=true, npc=156690 },
+    [47542360] = { trainer=true, npc=156671 }, -- , profession=356
     -- Enchanting
-    [48412939] = { trainer=true, npc=156683 }, -- , profession=333
+    [48412939] = { trainer=true, npc=156683, profession=333 },
     [47572905] = { vendor=true, npc=156694 },
 
     -- HALL OF HOLDING

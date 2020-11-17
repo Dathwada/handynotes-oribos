@@ -50,7 +50,7 @@ config.options = {
                     desc = L["config_icon_scale_desc"],
                     min = 0.25, max = 3, step = 0.01,
                     width = 1,
-                    order = 2.0,
+                    order = 2,
                 },
                 icon_alpha = {
                     type = "range",
@@ -65,7 +65,7 @@ config.options = {
                     name = L["config_auctioneer"],
                     desc = L["config_auctioneer_desc"],
                     order = 3,
-                    hidden = function() if (GetProfessionInfo(7) == nil) then return true end end,
+                    hidden = function() return not addon:CharacterHasProfession(202) end,
                 },
                 show_portal = {
                     type = "toggle",
@@ -77,7 +77,7 @@ config.options = {
                         end
                     end,
                     desc = L["config_portal_desc"],
-                    order = 3,
+                    order = 28,
                     disabled = function() return IsAddOnLoaded("HandyNotes_TravelGuide") end,
                 },
                 show_tpplatform = {
@@ -90,7 +90,7 @@ config.options = {
                         end
                     end,
                     desc = L["config_tpplatforms_desc"],
-                    order = 3.1,
+                    order = 29,
                     disabled = function() return IsAddOnLoaded("HandyNotes_TravelGuide") end,
                 },
                 desc2 = {
@@ -99,12 +99,19 @@ config.options = {
                     hidden = function()
                         return not IsAddOnLoaded("HandyNotes_TravelGuide")
                     end,
-                    order = 24,
+                    order = 30,
                 },
                 other_line = {
                     type = "header",
                     name = "",
-                    order = 25,
+                    order = 31,
+                },
+                show_onlymytrainers = {
+                    type = "toggle",
+                    width = "full",
+                    name = L["config_onlymytrainers"],
+                    desc = L["config_onlymytrainers_desc"],
+                    order = 32,
                 },
                 easy_waypoint = {
                     type = "toggle",
@@ -118,7 +125,7 @@ config.options = {
                     end,
                     disabled = function() return not IsAddOnLoaded("TomTom") end,
                     desc = L["config_easy_waypoints_desc"],
-                    order = 26,
+                    order = 33,
                 },
                 unhide = {
                     type = "execute",
@@ -132,7 +139,7 @@ config.options = {
                         addon:Refresh()
                         print("Covenant Sanctum: "..L["config_restore_nodes_print"])
                     end,
-                    order = 27,
+                    order = 34,
                 },
             },
             },

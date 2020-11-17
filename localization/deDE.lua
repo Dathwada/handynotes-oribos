@@ -61,6 +61,13 @@ L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."
 L["config_void"] = "Leerenlager"
 L["config_void_desc"] = "Zeigt die Position des Leerenlagers an."
 
+L["config_onlymytrainers"] = "Zeige nur die Lehrer für meine Berufe an"
+L["config_onlymytrainers_desc"] = [[
+Beeinflusst nur die Lehrer der Hauptberufe.
+
+|cFFFF0000HINWEIS: Hat nur Einfluss, wenn zwei Hauptberufe erlernt wurden.|r
+]]
+
 L["config_easy_waypoints"] = "Vereinfachte Wegpunkte"
 L["config_easy_waypoints_desc"] = "Aktiviert die vereinfachte Wegpunkterstellung. \nErlaubt es per Rechtsklick einen Wegpunkt zu setzen und per STRG + Rechtsklick mehr Optionen aufzurufen."
 

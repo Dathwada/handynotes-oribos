@@ -40,6 +40,29 @@ local function GetCreatureNamebyID(id)
 end
 
 ----------------------------------------------------------------------------------------------------
+---------------------------------------------PROFESSIONS--------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+function addon:CharacterHasProfession(SkillLineID)
+    local prof1, prof2 = GetProfessions()
+    local ID1 = prof1 and select(7, GetProfessionInfo(prof1))
+    local ID2 = prof2 and select(7, GetProfessionInfo(prof2))
+
+    if (ID1 == SkillLineID or ID2 == SkillLineID) then
+        return true
+    end
+    return false
+end
+
+local function HasTwoProfessions()
+    local prof1, prof2 = GetProfessions()
+    if prof1 and prof2 then
+        return true
+    end
+    return false
+end
+
+----------------------------------------------------------------------------------------------------
 ------------------------------------------------ICON------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
@@ -287,13 +310,10 @@ local currentMapID = nil
             return false
         end
         -- this will check if the node is for a specific profession
---        if point.profession then
---        local prof1, prof2, archi, fishing, cooking = GetProfessions()
---        local _,_,_,_,_,_,ID1 = GetProfessionInfo(prof1) -- first profession
- --       local _,_,_,_,_,_,ID2 = GetProfessionInfo(prof2) -- second profession
---            if (ID1 ~= point.profession) and (ID2 ~= point.profession) then return false; end
---        end
-        if (point.auctioneer and not private.db.show_auctioneer) then return false; end
+        if (point.profession and (not addon:CharacterHasProfession(point.profession) and HasTwoProfessions()) and private.db.show_onlymytrainers and not point.auctioneer) then
+            return false
+        end
+        if (point.auctioneer and (not addon:CharacterHasProfession(point.profession) or not private.db.show_auctioneer)) then return false; end
         if (point.banker and not private.db.show_banker) then return false; end
         if (point.barber and not private.db.show_barber) then return false; end
         if (point.innkeeper and not private.db.show_innkeeper) then return false; end
@@ -320,10 +340,10 @@ function addon:OnInitialize()
 
     profile = self.db.profile
     private.db = profile
-    
+
     global = self.db.global
     private.global = global
-    
+
     private.hidden = self.db.char.hidden
 
     if private.global.dev then
@@ -368,11 +388,11 @@ function events:QUEST_FINISHED(...)
     end
 end
 
-function events:LEARNED_SPELL_IN_TAB(...)
+function events:SKILL_LINES_CHANGED(...)
     addon:Refresh()
 
-        print("Oribos: refreshed after LEARNED_SPELL_IN_TAB")
     if private.global.dev and private.db.show_prints then
+        print("Oribos: refreshed after SKILL_LINES_CHANGED")
     end
 end
 

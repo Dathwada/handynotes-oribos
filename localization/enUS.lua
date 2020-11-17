@@ -61,6 +61,13 @@ L["config_vendor_desc"] = "Show the vendor locations."
 L["config_void"] = "Void Storage"
 L["config_void_desc"] = "Show the void storage location."
 
+L["config_onlymytrainers"] = "Show only the trainers for my professions"
+L["config_onlymytrainers_desc"] = [[
+Only affects the trainer of main professions.
+
+|cFFFF0000NOTE: Only affects when two main professions are learned.|r
+]]
+
 L["config_easy_waypoints"] = "Easy Waypoints"
 L["config_easy_waypoints_desc"] = "Activates simplified waypoint creation. \nAllows you to set a waypoint by right-clicking and access to more options by CTRL + right-clicking."
 

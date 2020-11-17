@@ -26,6 +26,7 @@ constants.defaults = {
         show_reforge = true,
         show_stablemaster = true,
         show_trainer = true,
+        show_onlymytrainers = false,
         show_transmogrifier = true,
         show_vendor = true,
         show_void = true,
