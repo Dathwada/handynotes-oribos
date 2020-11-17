@@ -95,7 +95,6 @@ L["handler_context_menu_hide_node"] = "Hide this node"
 
 --============================================TOOLTIPS============================================--
 
-L["SetTooltip_mailbox"] = "Mailbox"
 L["handler_tooltip_requires"] = "Requires"
 L["handler_tooltip_sanctum_feature"] = "a Sanctum Upgrade"
 L["handler_tooltip_data"] = "RETRIEVING DATA..."
@@ -112,5 +111,6 @@ L["Portal to Stormwind"] = true
 L["To Ring of Transference"] = true
 L["To Ring of Fates"] = true
 L["Into the Maw"] = true
+L["Mailbox"] = true
 
 end

@@ -80,8 +80,8 @@ DB.points = {
 --    65203600 "Guild Vault"
 
     -- THE IDYLLIA
-    [62815176] = { mail=true },
-    [73854906] = { mail=true },
+    [62815176] = { mail=true, label=L["Mailbox"] },
+    [73854906] = { mail=true, label=L["Mailbox"] },
     [67485033] = { innkeeper=true, npc=156688 },
 
     -- HALL OF CURIOSITIES

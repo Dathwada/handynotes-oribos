@@ -99,12 +99,11 @@ local function SetTooltip(tooltip, point)
                 tooltip:AddLine(sublabel,1,1,1)
             end
         end
-        if point.portal or point.tpplatform then
+        if point.label then
             tooltip:AddLine(point.label)
-            tooltip:AddLine(point.note)
         end
-        if point.mail then
-            tooltip:AddLine(L["SetTooltip_mailbox"])
+        if point.note then
+            tooltip:AddLine(point.note)
         end
         if (point.lvl and UnitLevel("player") < point.lvl) then
             tooltip:AddLine(RequiresPlayerLvl..": "..point.lvl, 1) -- red

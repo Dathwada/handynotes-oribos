@@ -95,7 +95,6 @@ L["handler_context_menu_hide_node"] = "Verstecke diesen Punkt"
 
 --============================================TOOLTIPS============================================--
 
-L["SetTooltip_mailbox"] = "Briefkasten"
 L["handler_tooltip_requires"] = "Benötigt"
 L["handler_tooltip_sanctum_feature"] = "eine Sanktumaufwertung"
 L["handler_tooltip_data"] = "DATEN ABRUFEN..."
@@ -114,5 +113,6 @@ L["Portal to Stormwind"] = "Portal nach Sturmwind"
 L["To Ring of Transference"] = "Zum Ring der Übertragung"
 L["To Ring of Fates"] = "Zum Ring der Schicksale"
 L["Into the Maw"] = "In den Schlund"
+L["Mailbox"] = "Briefkasten"
 
 end
