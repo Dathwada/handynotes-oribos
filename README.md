@@ -1,4 +1,4 @@
-##### **This is a [HandyNotes](https://www.curseforge.com/wow/addons/handynotes) plugin to show the NPC and POI locations in Oribos on the world map and minimap.**
+##### **This is a [HandyNotes](https://www.curseforge.com/wow/addons/handynotes) plugin to display the NPC and POI locations in Shadowlands <br> capital city Oribos, The Eternal City on the world map and minimap.**
 
 ## Options
 * **icon scale and alpha.**
@@ -20,12 +20,18 @@
 
 ## Features
 * Support for [TomTom](https://www.curseforge.com/wow/addons/tomtom) Waypoints.
+* Show only the Trainers for my Profession. (Only the main professions and if you have two professions)
+* Easy Waypoint (Set a waypoint by right-clicking a node and access to more options by CTRL + right-clicking)
 * Level and quest check.
     * ![](https://i.imgur.com/bOL9btW.png) - (Level or quest requirement is unfulfilled)
+
+![](https://i.imgur.com/hdvHenc.png) ![](https://i.imgur.com/YG1mxCY.png)
 
 ## Localization
 * `enUS` - default
 * `deDE` - German (Native locale by Dathwada!)
+
+If you wish to help localize Oribos, please go to [Localization](https://www.curseforge.com/wow/addons/handynotes-oribos/localization).
 
 ## Issues and Suggestion
 
