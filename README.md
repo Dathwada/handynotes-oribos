@@ -31,7 +31,7 @@
 * `enUS` - default
 * `deDE` - German (Native locale by Dathwada!)
 
-If you wish to help localize Oribos, please go to [Localization](https://www.curseforge.com/wow/addons/handynotes-oribos/localization).
+If you wish to help localize this plugin, please go to [Localization](https://www.curseforge.com/wow/addons/handynotes-oribos/localization).
 
 ## Issues and Suggestion
 
