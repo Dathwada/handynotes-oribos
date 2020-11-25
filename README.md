@@ -20,12 +20,12 @@
 
 ## Features
 * Support for [TomTom](https://www.curseforge.com/wow/addons/tomtom) Waypoints.
-* Show only the Trainers for my Profession. (Only the main professions and if you have two professions)
+* Show only the Trainers and Vendors for my Profession. (Only the main professions and if you have two professions)
 * Easy Waypoint (Set a waypoint by right-clicking a node and access to more options by CTRL + right-clicking)
-* Level and quest check.
-    * ![](https://i.imgur.com/bOL9btW.png) - (Level or quest requirement is unfulfilled)
+* Quest check.
+    * ![](https://i.imgur.com/bOL9btW.png) - (Quest requirement is unfulfilled)
 
-![](https://i.imgur.com/hdvHenc.png) ![](https://i.imgur.com/YG1mxCY.png)
+![](https://i.imgur.com/hdvHenc.png)
 
 ## Localization
 * `enUS` - default
