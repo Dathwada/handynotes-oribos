@@ -113,7 +113,7 @@ DB.points = {
 },
 
 [1671] = { -- Ring of Transference
-    [49525107] = { portal=true, label=IntoTheMaw, lvl=60 },
+    [49525107] = { portal=true, label=IntoTheMaw },
     [49504243] = { tpplatform=true, label=RingFates },
     [55735162] = { tpplatform=true, label=RingFates },
     [49506073] = { tpplatform=true, label=RingFates },
