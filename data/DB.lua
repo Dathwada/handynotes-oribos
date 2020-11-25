@@ -33,18 +33,18 @@ DB.points = {
 [1670] = { -- Ring of Fates
     -- HALL OF SHAPES
     -- Juwe
-    [34574459] = { vendor=true, npc=156733 },
+    [34574459] = { vendor=true, npc=156733, profession=755 },
     [35204130] = { trainer=true, npc=156670, profession=755 },
     -- Engineer
-    [37684297] = { vendor=true, npc=156692 },
-    [38074470] = { trainer=true, npc=156691 , profession=202 },
+    [37684297] = { vendor=true, npc=156692, profession=202 },
+    [38074470] = { trainer=true, npc=156691, profession=202 },
     [38334378] = { auctioneer=true, npc=173571, profession=202 },
     -- Inscription
-    [35963855] = { vendor=true, npc=156732 },
+    [35963855] = { vendor=true, npc=156732, profession=773 },
     [36503673] = { trainer=true, npc=156685, profession=773 },
-    [37193554] = { vendor=true, npc=164736 },
+    [37193554] = { vendor=true, npc=164736, profession=773 },
     -- Alchemy
-    [38873943] = { vendor=true, npc=156689 },
+    [38873943] = { vendor=true, npc=156689, profession=171 },
     [39244037] = { trainer=true, npc=156687, profession=171 },
     -- Herbalism
     [40233828] = { trainer=true, npc=156686, profession=182 },
@@ -58,7 +58,7 @@ DB.points = {
     [42162811] = { trainer=true, npc=156667, profession=393 },
     -- Leatherworking
     [42292666] = { trainer=true, npc=156669, profession=165 },
-    [44502653] = { vendor=true, npc=156696 },
+    [44502653] = { vendor=true, npc=156696, profession=165 },
     -- Tailor
     [45493182] = { trainer=true, npc=156681, profession=197 },
     -- Cooking
@@ -69,7 +69,7 @@ DB.points = {
     [47542360] = { trainer=true, npc=156671 }, -- , profession=356
     -- Enchanting
     [48412939] = { trainer=true, npc=156683, profession=333 },
-    [47572905] = { vendor=true, npc=156694 },
+    [47572905] = { vendor=true, npc=156694, profession=333 },
 
     -- HALL OF HOLDING
     -- Banker

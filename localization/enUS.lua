@@ -61,9 +61,9 @@ L["config_vendor_desc"] = "Show the vendor locations."
 L["config_void"] = "Void Storage"
 L["config_void_desc"] = "Show the void storage location."
 
-L["config_onlymytrainers"] = "Show only the trainers for my professions"
+L["config_onlymytrainers"] = "Show only the trainers and vendors for my professions"
 L["config_onlymytrainers_desc"] = [[
-Only affects the trainer of main professions.
+Only affects the trainer and vendor of main professions.
 
 |cFFFF0000NOTE: Only affects when two main professions are learned.|r
 ]]

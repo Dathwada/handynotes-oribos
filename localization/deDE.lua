@@ -61,9 +61,9 @@ L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."
 L["config_void"] = "Leerenlager"
 L["config_void_desc"] = "Zeigt die Position des Leerenlagers an."
 
-L["config_onlymytrainers"] = "Zeige nur die Lehrer für meine Berufe an"
+L["config_onlymytrainers"] = "Zeige nur die Lehrer und Händler für meine Berufe an"
 L["config_onlymytrainers_desc"] = [[
-Beeinflusst nur die Lehrer der Hauptberufe.
+Beeinflusst nur die Lehrer und Händler der Hauptberufe.
 
 |cFFFF0000HINWEIS: Hat nur Einfluss, wenn zwei Hauptberufe erlernt wurden.|r
 ]]
