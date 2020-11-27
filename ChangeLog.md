@@ -1,5 +1,11 @@
 ## Revision History:
 
+#### v4 (November 27 , 2020)
+-------------------------------
+* Added Traditional Chinese localization by [RainbowUI](https://www.curseforge.com/members/rainbowui) (100% completed)
+* Added Russian localization by [Werloz](https://www.curseforge.com/members/werloz) (75.38% completed)
+* Fixed global variable leak [#2](https://github.com/Dathwada/handynotes-oribos/issues/2)
+
 #### v3 (November 25 , 2020)
 -------------------------------
 * Include profession vendors in profession trainer hiding [#1](https://github.com/Dathwada/handynotes-oribos/issues/1)
