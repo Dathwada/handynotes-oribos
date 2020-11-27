@@ -33,8 +33,8 @@ local NPClinkOribos = CreateFrame("GameTooltip", "NPClinkOribos", UIParent, "Gam
 local function GetCreatureNamebyID(id)
 	NPClinkOribos:SetOwner(UIParent, "ANCHOR_NONE")
 	NPClinkOribos:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(id))
-	name     = _G["NPClinkOribosTextLeft1"]:GetText()
-    sublabel = _G["NPClinkOribosTextLeft2"]:GetText()
+    local name      = _G["NPClinkOribosTextLeft1"]:GetText()
+    local sublabel  = _G["NPClinkOribosTextLeft2"]:GetText()
     return name, sublabel
 end
 
