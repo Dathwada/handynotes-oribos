@@ -30,6 +30,7 @@
 ## Localization
 * `enUS` - default
 * `deDE` - German (Native locale by Dathwada!)
+* `ruRU` - Russian (thanks [Werloz](https://www.curseforge.com/members/werloz)!)
 * `zhTW` - Traditional Chinese (thanks [RainbowUI](https://www.curseforge.com/members/rainbowui)!)
 
 If you wish to help localize this plugin, please go to [Localization](https://www.curseforge.com/wow/addons/handynotes-oribos/localization).
