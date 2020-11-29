@@ -1,5 +1,9 @@
 ## Revision History:
 
+#### v5 (November 29 , 2020)
+-------------------------------
+Updated Russian localization by [Werloz](https://www.curseforge.com/members/werloz) and [dadec666](https://www.curseforge.com/members/dadec666) (100% completed)
+
 #### v4 (November 27 , 2020)
 -------------------------------
 * Added Traditional Chinese localization by [RainbowUI](https://www.curseforge.com/members/rainbowui) (100% completed)
