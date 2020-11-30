@@ -1,5 +1,9 @@
 ## Revision History:
 
+#### v6 (November 30 , 2020)
+-------------------------------
+* Added Simplified Chinese localization by [nbyang](https://www.curseforge.com/members/nbyang) (100% completed)
+
 #### v5 (November 29 , 2020)
 -------------------------------
 Updated Russian localization by [Werloz](https://www.curseforge.com/members/werloz) and [dadec666](https://www.curseforge.com/members/dadec666) (100% completed)
