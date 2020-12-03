@@ -103,6 +103,8 @@ DB.points = {
     [34445752] = { vendor=true, npc=168011 },
     [34645648] = { reforge=true, npc=164096 },
 
+    [23324895] = { portaltrainer=true, npc=176186, class="MAGE" },
+
     [20835477] = { portal=true, label=PtoOG, note=Durotar, faction="Horde", quest=60151 },
     [20894567] = { portal=true, label=PtoSW, note=ElwynnForest, faction="Alliance", quest=60151 },
 

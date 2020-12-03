@@ -70,7 +70,7 @@ local function SetIcon(point)
 
     for i, k in ipairs({
         "auctioneer", "anvil", "banker", "barber", "innkeeper", "mail", "portal",
-        "reforge", "stablemaster", "trainer", "transmogrifier", "tpplatform", "vendor", "void"
+        "reforge", "stablemaster", "trainer", "portaltrainer", "transmogrifier", "tpplatform", "vendor", "void"
     }) do
         if point[k] then icon_key = k end
     end
@@ -309,19 +309,20 @@ local currentMapID = nil
         if (point.profession and (not addon:CharacterHasProfession(point.profession) and HasTwoProfessions()) and private.db.show_onlymytrainers and not point.auctioneer) then
             return false
         end
-        if (point.auctioneer and (not addon:CharacterHasProfession(point.profession) or not private.db.show_auctioneer)) then return false; end
-        if (point.banker and not private.db.show_banker) then return false; end
-        if (point.barber and not private.db.show_barber) then return false; end
-        if (point.innkeeper and not private.db.show_innkeeper) then return false; end
-        if (point.mail and not private.db.show_mail) then return false; end
-        if (point.portal and (not private.db.show_portal or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false; end
-        if (point.tpplatform and (not private.db.show_tpplatform or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false; end
-        if (point.reforge and not private.db.show_reforge) then return false; end
-        if (point.stablemaster and not private.db.show_stablemaster) then return false; end
-        if (point.trainer and not private.db.show_trainer) then return false; end
-        if (point.transmogrifier and not private.db.show_transmogrifier) then return false; end
-        if ((point.vendor or point.anvil) and not private.db.show_vendor) then return false; end
-        if (point.void and not private.db.show_void) then return false; end
+        if (point.auctioneer and (not addon:CharacterHasProfession(point.profession) or not private.db.show_auctioneer)) then return false end
+        if (point.banker and not private.db.show_banker) then return false end
+        if (point.barber and not private.db.show_barber) then return false end
+        if (point.innkeeper and not private.db.show_innkeeper) then return false end
+        if (point.mail and not private.db.show_mail) then return false end
+        if (point.portal and (not private.db.show_portal or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+        if (point.tpplatform and (not private.db.show_tpplatform or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+        if (point.reforge and not private.db.show_reforge) then return false end
+        if (point.stablemaster and not private.db.show_stablemaster) then return false end
+        if (point.trainer and not private.db.show_trainer) then return false end
+        if (point.portaltrainer and not private.db.show_others) then return false end
+        if (point.transmogrifier and not private.db.show_transmogrifier) then return false end
+        if ((point.vendor or point.anvil) and not private.db.show_vendor) then return false end
+        if (point.void and not private.db.show_void) then return false end
     end
         return true
     end
