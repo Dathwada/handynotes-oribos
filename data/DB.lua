@@ -98,6 +98,8 @@ DB.points = {
     [47867789] = { vendor=true, npc=176067 }, -- Quartermaster
     [47577721] = { vendor=true, npc=176064 }, -- Quartermaster
     [47087695] = { vendor=true, npc=176065 }, -- Quartermaster
+    [46677736] = { vendor=true, npc=176066 }, -- Quartermaster
+    [46227780] = { vendor=true, npc=176368 }, -- Quartermaster
 
     [35055815] = { vendor=true, npc=164095 },
     [34445752] = { vendor=true, npc=168011 },
