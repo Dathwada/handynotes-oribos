@@ -30,7 +30,7 @@ constants.defaults = {
         show_transmogrifier = true,
         show_vendor = true,
         show_void = true,
---        show_others = true,
+        show_others = true,
 
         fmaster_waypoint = true,
         fmaster_waypoint_dropdown = 1,
@@ -90,5 +90,10 @@ constants.icon = {
     tpplatform      = "Interface\\MINIMAP\\TempleofKotmogu_ball_cyan",
     vendor          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\vendor",
     void            = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\void",
+
+    kyrian          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\kyrian",
+    necrolord       = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\necrolord",
+    nightfae        = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\nightfae",
+    venthyr         = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\venthyr",
 
 }

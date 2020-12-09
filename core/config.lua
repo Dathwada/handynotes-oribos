@@ -175,8 +175,8 @@ config.options = {
 }
 
 local icongroup = {
-    "banker", "barber", "innkeeper", "mail", "reforge",
-    "stablemaster", "trainer", "transmogrifier", "vendor", "void"
+    "banker", "barber", "innkeeper", "mail", "reforge", "stablemaster",
+    "trainer", "transmogrifier", "vendor", "void", "others"
 }
 
 for i, icongroup in ipairs(icongroup) do

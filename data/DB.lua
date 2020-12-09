@@ -122,6 +122,11 @@ DB.points = {
     [55735162] = { tpplatform=true, label=RingFates },
     [49506073] = { tpplatform=true, label=RingFates },
     [43375150] = { tpplatform=true, label=RingFates },
+
+    [62183266] = { kyrian=true, label=C_Map.GetMapInfo(1533).name, scale=1.5 },
+    [67345157] = { necrolord=true, label=C_Map.GetMapInfo(1536).name, scale=1.5 },
+    [49587788] = { nightfae=true, label=C_Map.GetMapInfo(1565).name, scale=1.5 },
+    [32015156] = { venthyr=true, label=C_Map.GetMapInfo(1525).name, scale=1.5 },
 },
 
 [1672] = {
