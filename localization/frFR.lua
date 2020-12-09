@@ -3,6 +3,8 @@ local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_Oribos", "frFR", false,
 if not L then return end
 -- French localization by Zickwik ( https://www.curseforge.com/members/zickwik )
 if L then
+L["Blizzard"] = true
+L["Both"] = "Les deux"
 L["config_auctioneer"] = "Commissaire-priseur"
 L["config_auctioneer_desc"] = "Afficher l'emplacement du commissaire-priseur."
 L["config_banker"] = "Banquier"
@@ -11,6 +13,10 @@ L["config_barber"] = "Coiffeur"
 L["config_barber_desc"] = "Afficher l'emplacement du coiffeur."
 L["config_easy_waypoints"] = "Points de Passage Facile"
 L["config_easy_waypoints_desc"] = "Active la création de points de passage simplifié. Vous permet de définir un point de passage par un clique-droit et d'accéder à plus d'options avec un CTRL + clique-droit."
+L["config_fmaster_waypoint"] = "Point de passage du maître de vol"
+L["config_fmaster_waypoint_desc"] = "Définit automatiquement un point de passage vers le maître de vol si vous entrez dans l’Anneau de Transfert."
+L["config_fmaster_waypoint_dropdown"] = "Choisissez"
+L["config_fmaster_waypoint_dropdown_desc"] = "Choisissez comment le point de passage doit être créé."
 L["config_icon_alpha"] = "Transparence des icônes"
 L["config_icon_alpha_desc"] = "Modifie la transparence des icônes"
 L["config_icon_scale"] = "Echelles des icônes"
@@ -72,4 +78,5 @@ L["Portal to Orgrimmar"] = "Portail vers Orgrimmar"
 L["Portal to Stormwind"] = "Portail vers Hurlevent"
 L["To Ring of Fates"] = "Vers l'Anneau des Destins"
 L["To Ring of Transference"] = "Vers l'Anneau de Transfert"
+L["TomTom"] = true
 end

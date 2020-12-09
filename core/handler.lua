@@ -366,6 +366,12 @@ function events:ZONE_CHANGED(...)
 
     if private.global.dev and private.db.show_prints then
         print("Oribos: refreshed after ZONE_CHANGED")
+        print("MapID: "..C_Map.GetBestMapForUnit("player"))
+    end
+
+    if C_Map.GetBestMapForUnit("player") == (1671 or 1543) then
+        C_Map.ClearUserWaypoint()
+        TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
     end
 end
 
@@ -374,6 +380,23 @@ function events:ZONE_CHANGED_INDOORS(...)
 
     if private.global.dev and private.db.show_prints then
         print("Oribos: refreshed after ZONE_CHANGED_INDOORS")
+    end
+
+    -- Set automatically a waypoint (Blizzard, TomTom or both) to the flightmaster.
+    if private.db.fmaster_waypoint and C_Map.GetBestMapForUnit("player") == 1671 then
+        if IsAddOnLoaded("TomTom") and private.db.fmaster_waypoint_dropdown == 2 then
+            TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
+        elseif IsAddOnLoaded("TomTom") and private.db.fmaster_waypoint_dropdown == 3 then
+            C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
+            C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+            TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
+        else
+            C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
+            C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+        end
+    elseif C_Map.GetBestMapForUnit("player") == 1670 then
+        C_Map.ClearUserWaypoint()
+        TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
     end
 end
 

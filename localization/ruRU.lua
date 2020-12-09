@@ -3,6 +3,8 @@ local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_Oribos", "ruRU", false,
 if not L then return end
 -- Russian localization by Werloz ( https://www.curseforge.com/members/werloz )
 if L then
+L["Blizzard"] = true
+L["Both"] = "Оба"
 L["config_auctioneer"] = "Аукционист"
 L["config_auctioneer_desc"] = "Показать местонахождение аукциониста."
 L["config_banker"] = "Банкир"
@@ -11,6 +13,10 @@ L["config_barber"] = "Парикмахер"
 L["config_barber_desc"] = "Показать местонахождение парикмахера."
 L["config_easy_waypoints"] = "Легкие путевые точки"
 L["config_easy_waypoints_desc"] = "Активирует упрощенное создание путевой точки. Позволяет установить маршрутную точку, щелкнув правой кнопкой мыши, и получить доступ к дополнительным параметрам, нажав CTRL + щелчок правой кнопкой мыши."
+L["config_fmaster_waypoint"] = "Путевая точка распорядителя полетов"
+L["config_fmaster_waypoint_desc"] = "Автоматически устанавливает путевую точку для распорядителя полетов, если вы входите в Кольце Перенаправления."
+L["config_fmaster_waypoint_dropdown"] = "Выбор"
+L["config_fmaster_waypoint_dropdown_desc"] = "Выберите способ создания путевой точки."
 L["config_icon_alpha"] = "Прозрачность иконок"
 L["config_icon_alpha_desc"] = "Изменяет прозрачность иконок"
 L["config_icon_scale"] = "Размер иконок"
@@ -72,4 +78,5 @@ L["Portal to Orgrimmar"] = "Портал в Оргриммар"
 L["Portal to Stormwind"] = "Портал в Штормград"
 L["To Ring of Fates"] = "В Кольцо Судеб"
 L["To Ring of Transference"] = "В Кольцо Перенаправления"
+L["TomTom"] = true
 end
