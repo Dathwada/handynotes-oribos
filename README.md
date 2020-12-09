@@ -21,6 +21,7 @@
 ## Features
 * Support for [TomTom](https://www.curseforge.com/wow/addons/tomtom) Waypoints.
 * Show only the Trainers and Vendors for my Profession. (Only the main professions and if you have two professions)
+* Flightmaster Waypoint (Sets automatically a waypoint to the flightmaster if you enter the ring of transfernece (Blizzard, TomTom or Both))
 * Easy Waypoint (Set a waypoint by right-clicking a node and access to more options by CTRL + right-clicking)
 * Quest check.
     * ![](https://i.imgur.com/bOL9btW.png) - (Quest requirement is unfulfilled)
@@ -30,6 +31,9 @@
 ## Localization
 * `enUS` - default
 * `deDE` - German (Native locale by Dathwada!)
+* `esMX` - Latin American Spanish (thanks [jack114](https://www.curseforge.com/members/jack114)!)
+* `frFR` - French (thanks [Zwickwik](https://www.curseforge.com/members/zickwik)!)
+* `ptBR` - Brazilian Portuguese (thanks [Mikedrs](https://www.curseforge.com/members/mikedrs)!)
 * `ruRU` - Russian (thanks [Werloz](https://www.curseforge.com/members/werloz)!)
 * `zhCN` - Simplified Chinese (thanks [nbyang](https://www.curseforge.com/members/nbyang)!)
 * `zhTW` - Traditional Chinese (thanks [RainbowUI](https://www.curseforge.com/members/rainbowui)!)
