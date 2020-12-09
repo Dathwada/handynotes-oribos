@@ -1,5 +1,15 @@
 ## Revision History:
 
+#### v7 (December 10, 2020)
+-------------------------------
+* Added an option to set automatically a waypoint to the flightmaster if you enter the ring of transfernece (ON by default | Blizzard, TomTom or Both)
+* Added French localization by [Zwickwik](https://www.curseforge.com/members/zickwik) (100% completed)
+* Added Latin American Spanish localization by [jack114](https://www.curseforge.com/members/jack114) (90.28% completed)
+* Added Brazilian Portuguese localization by [Mikedrs](https://www.curseforge.com/members/mikedrs) (90.28% completed)
+* Added covenant icons for zone gateways [User request on Curseforge](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=16)
+* Added the mage portaltrainer
+* Added two missing quartermasters
+
 #### v6 (November 30, 2020)
 -------------------------------
 * Added Simplified Chinese localization by [nbyang](https://www.curseforge.com/members/nbyang) (100% completed)
