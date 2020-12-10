@@ -370,7 +370,7 @@ function events:ZONE_CHANGED(...)
         print("MapID: "..C_Map.GetBestMapForUnit("player"))
     end
 
-    if C_Map.GetBestMapForUnit("player") == (1671 or 1543) then
+    if C_Map.GetBestMapForUnit("player") == 1671 or C_Map.GetBestMapForUnit("player") == 1543 then
         C_Map.ClearUserWaypoint()
         if IsAddOnLoaded("TomTom") then
         TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
