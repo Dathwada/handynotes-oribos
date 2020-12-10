@@ -1,5 +1,9 @@
 ## Revision History:
 
+#### v7.1 (December 10, 2020)
+-------------------------------
+* Fixed an error if TomTom is not enabled
+
 #### v7 (December 10, 2020)
 -------------------------------
 * Added an option to set automatically a waypoint to the flightmaster if you enter the ring of transfernece (ON by default | Blizzard, TomTom or Both)
