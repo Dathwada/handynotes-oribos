@@ -372,7 +372,9 @@ function events:ZONE_CHANGED(...)
 
     if C_Map.GetBestMapForUnit("player") == (1671 or 1543) then
         C_Map.ClearUserWaypoint()
+        if IsAddOnLoaded("TomTom") then
         TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
+        end
     end
 end
 
@@ -397,7 +399,9 @@ function events:ZONE_CHANGED_INDOORS(...)
         end
     elseif C_Map.GetBestMapForUnit("player") == 1670 then
         C_Map.ClearUserWaypoint()
+        if IsAddOnLoaded("TomTom") then
         TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
+        end
     end
 end
 
