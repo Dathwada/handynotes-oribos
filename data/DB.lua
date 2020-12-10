@@ -62,11 +62,11 @@ DB.points = {
     -- Tailor
     [45493182] = { trainer=true, npc=156681, profession=197 },
     -- Cooking
-    [46232637] = { vendor=true, npc=168353 },
-    [46202560] = { trainer=true, npc=156672 }, -- , profession=185
+    [47492372] = { vendor=true, npc=168353 },
+    [46822268] = { trainer=true, npc=156672 }, -- , profession=185
     -- Fishing
-    [46832259] = { vendor=true, npc=156690 },
-    [47542360] = { trainer=true, npc=156671 }, -- , profession=356
+    [46282576] = { vendor=true, npc=156690 },
+    [46172640] = { trainer=true, npc=156671 }, -- , profession=356
     -- Enchanting
     [48412939] = { trainer=true, npc=156683, profession=333 },
     [47572905] = { vendor=true, npc=156694, profession=333 },
