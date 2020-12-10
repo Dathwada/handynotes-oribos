@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v7.2 (December 10, 2020)
+-------------------------------
+* Swapped the locations for Cooking and Fishing vendors/trainers
+* Fixed a condition
+
 #### v7.1 (December 10, 2020)
 -------------------------------
 * Fixed an error if TomTom is not enabled
