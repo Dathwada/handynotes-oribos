@@ -31,6 +31,7 @@
 ## Localization
 * `enUS` - default
 * `deDE` - German (Native locale by Dathwada!)
+* `esES` - Spanish (thanks [S0NSHINE_](https://www.curseforge.com/members/S0NSHINE_) and [Irakua](https://www.curseforge.com/members/Irakua)!)
 * `esMX` - Latin American Spanish (thanks [jack114](https://www.curseforge.com/members/jack114)!)
 * `frFR` - French (thanks [Zwickwik](https://www.curseforge.com/members/zickwik)!)
 * `ptBR` - Brazilian Portuguese (thanks [Mikedrs](https://www.curseforge.com/members/mikedrs)!)
