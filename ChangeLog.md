@@ -1,5 +1,12 @@
 ## Revision History:
 
+#### v8 (December 13, 2020)
+-------------------------------
+* Added Spanish localization by [S0NSHINE_](https://www.curseforge.com/members/S0NSHINE_) and [Irakua](https://www.curseforge.com/members/Irakua)
+* Updated Latin American Spanish localization by [jack114](https://www.curseforge.com/members/jack114)
+* Swapped the location for Bastion and Maldraxxus gateways [Curseforge #22](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=22)
+* Fixed a bug with a quickly flashing TomTom waypoint for the Oribos flightmaster when changing zones in the Maw [Curseforge #27](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=27)
+
 #### v7.2 (December 10, 2020)
 -------------------------------
 * Swapped the locations for Cooking and Fishing vendors/trainers
