@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v9 (December 20, 2020)
+-------------------------------
+* Added Italian localization by [_unobf_crimsab](https://www.curseforge.com/members/_unobf_crimsab)
+* Updated ptBR, ruRU localizations
+
 #### v8 (December 13, 2020)
 -------------------------------
 * Added Spanish localization by [S0NSHINE_](https://www.curseforge.com/members/S0NSHINE_) and [Irakua](https://www.curseforge.com/members/Irakua)
