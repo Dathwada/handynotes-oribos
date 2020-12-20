@@ -34,6 +34,7 @@
 * `esES` - Spanish (thanks [S0NSHINE_](https://www.curseforge.com/members/S0NSHINE_) and [Irakua](https://www.curseforge.com/members/Irakua)!)
 * `esMX` - Latin American Spanish (thanks [jack114](https://www.curseforge.com/members/jack114)!)
 * `frFR` - French (thanks [Zwickwik](https://www.curseforge.com/members/zickwik)!)
+* `itIT` - Italian (thanks [_unobf_crimsab](https://www.curseforge.com/members/_unobf_crimsab)!)
 * `ptBR` - Brazilian Portuguese (thanks [Mikedrs](https://www.curseforge.com/members/mikedrs)!)
 * `ruRU` - Russian (thanks [Werloz](https://www.curseforge.com/members/werloz)!)
 * `zhCN` - Simplified Chinese (thanks [nbyang](https://www.curseforge.com/members/nbyang)!)
