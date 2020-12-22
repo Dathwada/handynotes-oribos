@@ -1,7 +1,7 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_Oribos", "itIT", false, true)
 
 if not L then return end
--- Italian localization by _unobf_crimsab ( https://www.curseforge.com/members/_unobf_crimsab )
+-- Italian localization by Crimsab ( https://www.curseforge.com/members/crimsab )
 if L then
 L["Blizzard"] = true
 L["Both"] = "Tutti e due"

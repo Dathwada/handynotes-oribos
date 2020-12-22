@@ -2,7 +2,7 @@
 
 #### v9 (December 20, 2020)
 -------------------------------
-* Added Italian localization by [_unobf_crimsab](https://www.curseforge.com/members/_unobf_crimsab)
+* Added Italian localization by [Crimsab](https://www.curseforge.com/members/crimsab)
 * Updated ptBR, ruRU localizations
 
 #### v8 (December 13, 2020)
