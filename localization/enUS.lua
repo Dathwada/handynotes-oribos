@@ -44,8 +44,11 @@ L["config_mail_desc"] = "Show the mailbox locations."
 L["config_portal"] = "Portal"
 L["config_portal_desc"] = "Show the portal location."
 
-L["config_tpplatforms"] = "Teleport Platform"
-L["config_tpplatforms_desc"] = "Show the teleport platform locations."
+L["config_portaltrainer"] = "Portal Trainer"
+L["config_portaltrainer_desc"] = "Show the Mage portal trainer location."
+
+L["config_tpplatform"] = "Teleport Platform"
+L["config_tpplatform_desc"] = "Show the teleport platform locations."
 
 L["config_travelguide_note"] = "|cFFFF0000*Already active through HandyNotes: TravelGuide.|r"
 
@@ -67,6 +70,12 @@ L["config_vendor_desc"] = "Show the vendor locations."
 L["config_void"] = "Void Storage"
 L["config_void_desc"] = "Show the void storage location."
 
+L["config_zonegateway"] = "Zone Gateways"
+L["config_zonegateway_desc"] = "Show the zone gateway locations."
+
+L["config_others"] = "Others"
+L["config_others_desc"] = "Show all the other POIs."
+
 L["config_onlymytrainers"] = "Show only the trainers and vendors for my professions"
 L["config_onlymytrainers_desc"] = [[
 Only affects the trainer and vendor of main professions.
@@ -85,8 +94,6 @@ L["Both"] = true
 L["config_easy_waypoints"] = "Easy Waypoints"
 L["config_easy_waypoints_desc"] = "Activates simplified waypoint creation. \nAllows you to set a waypoint by right-clicking and access to more options by CTRL + right-clicking."
 
-L["config_others"] = "Others"
-L["config_others_desc"] = "Show all the other POIs."
 L["config_picons"] = "Show profession icons for:"
 L["config_picons_vendor_desc"] = "Show profession icons for vendors instead of the vendor icons."
 L["config_picons_trainer_desc"] = "Show profession icons for trainers instead of the trainer icons."

@@ -44,8 +44,11 @@ L["config_mail_desc"] = "Zeigt die Positionen der Briefkästen an."
 L["config_portal"] = "Portal"
 L["config_portal_desc"] = "Zeigt die Position des Portals an."
 
-L["config_tpplatforms"] = "Teleportplattformen"
-L["config_tpplatforms_desc"] = "Zeigt die Positionen der Teleportplattformen an."
+L["config_portaltrainer"] = "Portallehrer"
+L["config_portaltrainer_desc"] = "Zeigt die Position des Portallehrers für Magier an."
+
+L["config_tpplatform"] = "Teleportplattformen"
+L["config_tpplatform_desc"] = "Zeigt die Positionen der Teleportplattformen an."
 
 L["config_travelguide_note"] = "|cFFFF0000*Bereits durch HandyNotes: TravelGuide aktiv.|r"
 
@@ -67,6 +70,12 @@ L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."
 L["config_void"] = "Leerenlager"
 L["config_void_desc"] = "Zeigt die Position des Leerenlagers an."
 
+L["config_zonegateway"] = "Zonen Gateways"
+L["config_zonegateway_desc"] = "Zeigt die Positionen der Zonen Gateways an."
+
+L["config_others"] = "Anderes"
+L["config_others_desc"] = "Zeige alle anderen POIs."
+
 L["config_onlymytrainers"] = "Zeige nur die Lehrer und Händler für meine Berufe an"
 L["config_onlymytrainers_desc"] = [[
 Beeinflusst nur die Lehrer und Händler der Hauptberufe.
@@ -85,8 +94,6 @@ L["Both"] = "Beide"
 L["config_easy_waypoints"] = "Vereinfachte Wegpunkte"
 L["config_easy_waypoints_desc"] = "Aktiviert die vereinfachte Wegpunkterstellung. \nErlaubt es per Rechtsklick einen Wegpunkt zu setzen und per STRG + Rechtsklick mehr Optionen aufzurufen."
 
-L["config_others"] = "Anderes"
-L["config_others_desc"] = "Zeige alle anderen POIs."
 L["config_picons"] = "Zeige Berufssymbole für:"
 L["config_picons_vendor_desc"] = "Zeigt anstelle der normalen Händlersymbole die berufsbezogenen Symbole für die Händler an."
 L["config_picons_trainer_desc"] = "Zeigt anstelle der normalen Berufslehrersymbole die berufsbezogenen Symbole für die Berufslehrer an."

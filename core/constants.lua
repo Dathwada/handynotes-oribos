@@ -58,16 +58,18 @@ constants.defaults = {
         show_innkeeper = true,
         show_mail = true,
         show_portal = true,
+        show_portaltrainer = true,
         show_tpplatform = true,
         show_reforge = true,
         show_stablemaster = true,
         show_trainer = true,
-        show_onlymytrainers = false,
         show_transmogrifier = true,
         show_vendor = true,
         show_void = true,
-        show_others = true,
+        show_zonegateway = true,
+        -- show_others = true,
 
+        show_onlymytrainers = false,
         fmaster_waypoint = true,
         fmaster_waypoint_dropdown = 1,
         easy_waypoint = true,
@@ -88,6 +90,27 @@ constants.defaults = {
 ----------------------------------------------------------------------------------------------------
 ------------------------------------------------ICONS-----------------------------------------------
 ----------------------------------------------------------------------------------------------------
+
+constants.icongroup = {
+    "auctioneer",
+    -- "anvil",
+    "banker",
+    "barber",
+    "greatvault",
+    "guildvault",
+    "innkeeper",
+    "mail",
+    "portal",
+    "portaltrainer",
+    "reforge",
+    "stablemaster",
+    "trainer",
+    "transmogrifier",
+    "tpplatform",
+    "vendor",
+    "void",
+    "zonegateway"
+}
 
 local left, right, top, bottom = GetObjectIconTextureCoords("4772") --MagePortalAlliance
 local left2, right2, top2, bottom2 = GetObjectIconTextureCoords("4773") --MagePortalHorde
@@ -114,8 +137,6 @@ constants.icon = {
     anvil           = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\anvil",
     banker          = "Interface\\MINIMAP\\TRACKING\\Banker",
     barber          = "Interface\\MINIMAP\\TRACKING\\Barbershop",
---    flightmaster    = "Interface\\MINIMAP\\TRACKING\\FlightMaster",
---    food            = "Interface\\MINIMAP\\TRACKING\\Food",
     greatvault      = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\greatvault",
     guildvault      = "Interface\\ICONS\\Achievement_ChallengeMode_Auchindoun_Gold",
     innkeeper       = "Interface\\MINIMAP\\TRACKING\\Innkeeper",
@@ -124,7 +145,6 @@ constants.icon = {
     stablemaster    = "Interface\\MINIMAP\\TRACKING\\StableMaster",
     trainer         = "Interface\\MINIMAP\\TRACKING\\Profession",
     portaltrainer   = "Interface\\MINIMAP\\TRACKING\\Profession",
---    reagents        = "Interface\\MINIMAP\\TRACKING\\Reagents",
     transmogrifier  = "Interface\\MINIMAP\\TRACKING\\Transmogrifier",
     tpplatform      = "Interface\\MINIMAP\\TempleofKotmogu_ball_cyan",
     vendor          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\vendor",
