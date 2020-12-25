@@ -183,15 +183,14 @@ config.options = {
             },
         },
     },
---    SCALEALPHA = {
---        type = "group",
---        name = L["config_tab_scale_alpha"],
---        desc = L["config_scale_alpha_desc"],
---        order = 1,
---        args = {
---
---        },
---    },
+    SCALEALPHA = {
+        type = "group",
+        name = L["config_tab_scale_alpha"],
+        desc = L["config_scale_alpha_desc"],
+        order = 1,
+        args = {
+        },
+    },
     },
 }
 
@@ -226,7 +225,7 @@ for i, icongroup in ipairs(icongroup) do
         desc = L["config_icon_scale_desc"],
         min = 0.25, max = 3, step = 0.01,
         arg = "icon_scale_"..icongroup,
-        width = 1.13,
+        width = 1.07,
         order = i *10 + 1,
     }
 
@@ -236,7 +235,7 @@ for i, icongroup in ipairs(icongroup) do
         desc = L["config_icon_alpha_desc"],
         min = 0, max = 1, step = 0.01,
         arg = "icon_alpha_"..icongroup,
-        width = 1.13,
+        width = 1.07,
         order = i *10 + 2,
     }
 end
