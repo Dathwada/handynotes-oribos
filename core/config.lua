@@ -113,12 +113,33 @@ config.options = {
                     desc = L["config_onlymytrainers_desc"],
                     order = 32,
                 },
+                picons = {
+                    type = "description",
+                    width = 0.9,
+                    name = L["config_picons"],
+                    fontSize = "medium",
+                    order = 33,
+                },
+                picons_vendor = {
+                    type = "toggle",
+                    width = 0.5,
+                    name = L["config_vendor"],
+                    desc = L["config_picons_vendor_desc"],
+                    order = 33.1,
+                },
+                picons_trainer = {
+                    type = "toggle",
+                    width = 0.6,
+                    name = L["config_trainer"],
+                    desc = L["config_picons_trainer_desc"],
+                    order = 33.2,
+                },
                 fmaster_waypoint = {
                     type = "toggle",
                     width = 1.3,
                     name = L["config_fmaster_waypoint"],
                     desc = L["config_fmaster_waypoint_desc"],
-                    order = 33,
+                    order = 34,
                 },
                 fmaster_waypoint_dropdown = {
                     type = "select",
@@ -128,7 +149,7 @@ config.options = {
                     name = L["config_fmaster_waypoint_dropdown"],
                     desc = L["config_fmaster_waypoint_dropdown_desc"],
                     width = 0.7,
-                    order = 34,
+                    order = 35,
                 },
                 easy_waypoint = {
                     type = "toggle",
@@ -142,7 +163,7 @@ config.options = {
                     end,
                     disabled = function() return not IsAddOnLoaded("TomTom") end,
                     desc = L["config_easy_waypoints_desc"],
-                    order = 35,
+                    order = 36,
                 },
                 unhide = {
                     type = "execute",
@@ -154,9 +175,9 @@ config.options = {
                             wipe(coords)
                         end
                         addon:Refresh()
-                        print("Covenant Sanctum: "..L["config_restore_nodes_print"])
+                        print("Oribos: "..L["config_restore_nodes_print"])
                     end,
-                    order = 36,
+                    order = 37,
                 },
             },
             },

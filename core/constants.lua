@@ -73,6 +73,7 @@ constants.icon = {
         tCoordBottom = bottom2,
     },
 
+    -- npc/poi icons
     auctioneer      = "Interface\\MINIMAP\\TRACKING\\Auctioneer",
     anvil           = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\anvil",
     banker          = "Interface\\MINIMAP\\TRACKING\\Banker",
@@ -91,9 +92,25 @@ constants.icon = {
     vendor          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\vendor",
     void            = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\void",
 
+    -- covenant icons
     kyrian          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\kyrian",
     necrolord       = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\necrolord",
     nightfae        = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\nightfae",
     venthyr         = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\venthyr",
+
+    -- profession icons
+    alchemy         = "Interface\\ICONS\\trade_alchemy",
+    blacksmithing   = "Interface\\ICONS\\trade_blacksmithing",
+    cooking         = "Interface\\ICONS\\INV_Misc_Food_15",
+    enchanting      = "Interface\\ICONS\\trade_engraving",
+    engineering     = "Interface\\ICONS\\trade_engineering",
+    fishing         = "Interface\\ICONS\\trade_fishing",
+    herbalism       = "Interface\\ICONS\\spell_nature_naturetouchgrow",
+    inscription     = "Interface\\ICONS\\inv_inscription_tradeskill01",
+    jewelcrafting   = "Interface\\ICONS\\inv_misc_gem_01",
+    leatherworking  = "Interface\\ICONS\\inv_misc_armorkit_17",
+    mining          = "Interface\\ICONS\\trade_mining",
+    skinning        = "Interface\\ICONS\\inv_misc_pelt_wolf_01",
+    tailoring       = "Interface\\ICONS\\trade_tailoring"
 
 }

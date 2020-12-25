@@ -81,6 +81,9 @@ L["config_easy_waypoints_desc"] = "Activates simplified waypoint creation. \nAll
 
 L["config_others"] = "Others"
 L["config_others_desc"] = "Show all the other POIs."
+L["config_picons"] = "Show profession icons for:"
+L["config_picons_vendor_desc"] = "Show profession icons for vendors instead of the vendor icons."
+L["config_picons_trainer_desc"] = "Show profession icons for trainers instead of the trainer icons."
 
 L["config_restore_nodes"] = "Restore hidden nodes"
 L["config_restore_nodes_desc"] = "Restore all nodes that were hidden via the context menu."
