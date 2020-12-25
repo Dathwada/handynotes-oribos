@@ -29,6 +29,12 @@ L["config_banker_desc"] = "Zeigt die Positionen der Bankiers an."
 L["config_barber"] = "Barbier"
 L["config_barber_desc"] = "Zeigt die Position des Barbiers an."
 
+L["config_greatvault"] = "Die Große Schatzkammer"
+L["config_greatvault_desc"] = "Zeigt die Position der Großen Schatzkammer an."
+
+L["config_guildvault"] = "Gildentresor"
+L["config_guildvault_desc"] = "Zeigt die Position des Gildentresors an."
+
 L["config_innkeeper"] = "Gastwirt"
 L["config_innkeeper_desc"] = "Zeigt die Position des Gastwirte an."
 

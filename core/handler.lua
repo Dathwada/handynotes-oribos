@@ -334,6 +334,8 @@ local currentMapID = nil
         if (point.icon == "auctioneer" and (not addon:CharacterHasProfession(point.profession) or not private.db.show_auctioneer)) then return false end
         if (point.icon == "banker" and not private.db.show_banker) then return false end
         if (point.icon == "barber" and not private.db.show_barber) then return false end
+        if (point.icon == "greatvault" and not private.db.show_greatvault) then return false end
+        if (point.icon == "guildvault" and not private.db.show_guildvault) then return false end
         if (point.icon == "innkeeper" and not private.db.show_innkeeper) then return false end
         if (point.icon == "mail" and not private.db.show_mail) then return false end
         if (point.icon == "portal" and (not private.db.show_portal or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
