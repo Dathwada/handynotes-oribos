@@ -399,7 +399,7 @@ function events:ZONE_CHANGED(...)
             C_Map.ClearUserWaypoint()
         end
         if IsAddOnLoaded("TomTom") and (private.db.fmaster_waypoint_dropdown == 2 or private.db.fmaster_waypoint_dropdown == 3) then
-            TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
+            TomTom:RemoveWaypoint(private.uid)
         end
     end
 end
@@ -413,13 +413,10 @@ function events:ZONE_CHANGED_INDOORS(...)
 
     -- Set automatically a waypoint (Blizzard, TomTom or both) to the flightmaster.
     if private.db.fmaster_waypoint and C_Map.GetBestMapForUnit("player") == 1671 then
-        if IsAddOnLoaded("TomTom") and private.db.fmaster_waypoint_dropdown == 2 then
-            TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
-        elseif IsAddOnLoaded("TomTom") and private.db.fmaster_waypoint_dropdown == 3 then
-            C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
-            C_SuperTrack.SetSuperTrackedUserWaypoint(true)
-            TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
-        else
+        if IsAddOnLoaded("TomTom") and private.db.fmaster_waypoint_dropdown == 2 or private.db.fmaster_waypoint_dropdown == 3 then
+            private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
+        end
+        if private.db.fmaster_waypoint_dropdown == 1 or private.db.fmaster_waypoint_dropdown == 3 then
             C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
             C_SuperTrack.SetSuperTrackedUserWaypoint(true)
         end
@@ -428,7 +425,7 @@ function events:ZONE_CHANGED_INDOORS(...)
             C_Map.ClearUserWaypoint()
         end
         if IsAddOnLoaded("TomTom") and (private.db.fmaster_waypoint_dropdown == 2 or private.db.fmaster_waypoint_dropdown == 3) then
-            TomTom:RemoveWaypoint(TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)}))
+            TomTom:RemoveWaypoint(private.uid)
         end
     end
 end
