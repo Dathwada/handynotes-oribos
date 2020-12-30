@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v10.1 (December 31, 2020)
+-------------------------------
+* Updated more localizations (frFR, itIT, ruRU, zhCN, zhTW)
+* Removed the Scale / Alpha description
+
 #### v10 (December 30, 2020)
 -------------------------------
 * Changed the mailbox icon (is now the minimap icon)
