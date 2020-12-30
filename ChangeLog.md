@@ -1,5 +1,15 @@
 ## Revision History:
 
+#### v10 (December 30, 2020)
+-------------------------------
+* Changed the mailbox icon (is now the minimap icon)
+* Added a new options tab Scale / Alpha
+* Added an option to show trainer and vendor icons as profession icons [Curseforge #21](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=21)
+* Added the great vault and guild vault [Curseforge #30](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=30)
+* Fixed a quickly flashing TomTom waypoint for the Oribos flightmaster when changing zones in Oribos [Curseforge #35](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=35)
+* Background changes for the config menu
+* Updated the localizations
+
 #### v9 (December 20, 2020)
 -------------------------------
 * Added Italian localization by [Crimsab](https://www.curseforge.com/members/crimsab)
