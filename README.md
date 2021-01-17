@@ -5,6 +5,8 @@
 * **toggle visibility of**
     * ![](https://i.imgur.com/7i2g9sh.png) Auctioneer (Only for Engineers)
     * ![](https://i.imgur.com/WohtUwP.png) Bankers
+    * ![](https://i.imgur.com/8Naqwbj.png) Guild Vault
+    * ![](https://i.imgur.com/ynTVGr6.png) The Great Vault
     * ![](https://i.imgur.com/wAga1cd.png) Innkeeper
     * ![](https://i.imgur.com/iGH7Fqt.png) Mailboxes
     * ![](https://i.imgur.com/NIUq9ta.png) Portal*
