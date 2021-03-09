@@ -21,7 +21,6 @@ local RingTransference = L["To Ring of Transference"]
 local RingFates = L["To Ring of Fates"]
 local IntoTheMaw = L["Into the Maw"]
 
-local greatvault = L["config_greatvault"]
 local guildvault = L["config_guildvault"]
 local mailbox = L["Mailbox"]
 
@@ -81,7 +80,6 @@ DB.points = {
     [60432950] = { icon="banker", npc=156479 },
     [58693031] = { icon="banker", npc=156479 },
     [58102771] = { icon="banker", npc=156479 },
-    [65233051] = { icon="greatvault", label=greatvault },
     [58163602] = { icon="mail", label=mailbox },
     [65203600] = { icon="guildvault", label=guildvault },
 
