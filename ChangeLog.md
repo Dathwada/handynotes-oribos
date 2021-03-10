@@ -1,5 +1,13 @@
 ## Revision History:
 
+#### v11 (March 10, 2020)
+-------------------------------
+* Added Korean localizationby [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)
+* Added two new mailbox locations
+* Removed the great vault (added by Blizzard)
+* Updated deDE, esES, esMX
+* Bump .toc to 90005
+
 #### v10.1 (December 31, 2020)
 -------------------------------
 * Updated more localizations (frFR, itIT, ruRU, zhCN, zhTW)
