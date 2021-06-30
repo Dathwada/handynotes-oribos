@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v12 (June 30, 2020)
+-------------------------------
+* Updated localizations
+* Bump .toc to 90100
+
 #### v11 (March 10, 2020)
 -------------------------------
 * Added Korean localizationby [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)
