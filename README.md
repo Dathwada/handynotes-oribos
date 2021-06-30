@@ -22,7 +22,7 @@
 ## Features
 * Support for [TomTom](https://www.curseforge.com/wow/addons/tomtom) Waypoints.
 * Show only the Trainers and Vendors for my Profession. (Only the main professions and if you have two professions)
-* Flightmaster Waypoint (Sets automatically a waypoint to the flightmaster if you enter the ring of transfernece (Blizzard, TomTom or Both))
+* Flightmaster Waypoint (Sets automatically a waypoint to the flightmaster if you enter the ring of transference (Blizzard, TomTom or Both))
 * Easy Waypoint (Set a waypoint by right-clicking a node and access to more options by CTRL + right-clicking)
 * Quest check.
     * ![](https://i.imgur.com/bOL9btW.png) - (Quest requirement is unfulfilled)
