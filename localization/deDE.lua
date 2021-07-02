@@ -138,6 +138,7 @@ L["Portal to Stormwind"] = "Portal nach Sturmwind"
 L["To Ring of Transference"] = "Zum Ring der Übertragung"
 L["To Ring of Fates"] = "Zum Ring der Schicksale"
 L["Into the Maw"] = "In den Schlund"
+L["To Keeper's Respite"] = "Zur Zuflucht des Hüters"
 L["Mailbox"] = "Briefkasten"
 
 end

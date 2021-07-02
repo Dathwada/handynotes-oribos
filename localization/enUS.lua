@@ -136,6 +136,7 @@ L["Portal to Stormwind"] = true
 L["To Ring of Transference"] = true
 L["To Ring of Fates"] = true
 L["Into the Maw"] = true
+L["To Keeper's Respite"] = true
 L["Mailbox"] = true
 
 end
