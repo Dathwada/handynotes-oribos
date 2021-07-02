@@ -39,7 +39,7 @@ L["config_mail"] = "Mailbox"
 L["config_mail_desc"] = "Show the mailbox locations."
 
 L["config_portal"] = "Portal"
-L["config_portal_desc"] = "Show the portal location."
+L["config_portal_desc"] = "Show the portal locations."
 
 L["config_portaltrainer"] = "Portal Trainer"
 L["config_portaltrainer_desc"] = "Show the Mage portal trainer location."

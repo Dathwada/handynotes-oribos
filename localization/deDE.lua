@@ -38,8 +38,8 @@ L["config_innkeeper_desc"] = "Zeigt die Position des Gastwirte an."
 L["config_mail"] = "Briefkästen"
 L["config_mail_desc"] = "Zeigt die Positionen der Briefkästen an."
 
-L["config_portal"] = "Portal"
-L["config_portal_desc"] = "Zeigt die Position des Portals an."
+L["config_portal"] = "Portale"
+L["config_portal_desc"] = "Zeigt die Position der Portale an."
 
 L["config_portaltrainer"] = "Portallehrer"
 L["config_portaltrainer_desc"] = "Zeigt die Position des Portallehrers für Magier an."
