@@ -1,17 +1,17 @@
 ## Revision History:
 
-#### v13 (July 04, 2020)
+#### v13 (July 04, 2021)
 -------------------------------
 * Added the new "Portal" to Keeper's Respite (Korthia) [Github #5](https://github.com/Dathwada/handynotes-oribos/issues/5)
 * Fixed portal icon behavior (the icon is now red as intended if the required quest isn't completed)
 * Updated localizations (enUS, deDE, ptBr, ruRU)
 
-#### v12 (June 30, 2020)
+#### v12 (June 30, 2021)
 -------------------------------
 * Updated localizations
 * Bump .toc to 90100
 
-#### v11 (March 10, 2020)
+#### v11 (March 10, 2021)
 -------------------------------
 * Added Korean localizationby [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)
 * Added two new mailbox locations
