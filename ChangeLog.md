@@ -1,5 +1,11 @@
 ## Revision History:
 
+#### v14 (September 14, 2021)
+-------------------------------
+* Reworked Flightmaster Waypoint functions
+* The Flightmaster Waypoint will now be removed when you've used the Portal to Korthia. [Curseforge #46](https://www.curseforge.com/wow/addons/handynotes-oribos?comment=46)
+* Updated localizations (esMX, itIT, frFR, ptBr, zhCN, zhTW)
+
 #### v13 (July 04, 2021)
 -------------------------------
 * Added the new "Portal" to Keeper's Respite (Korthia) [Github #5](https://github.com/Dathwada/handynotes-oribos/issues/5)
@@ -13,7 +19,7 @@
 
 #### v11 (March 10, 2021)
 -------------------------------
-* Added Korean localizationby [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)
+* Added Korean localization by [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)
 * Added two new mailbox locations
 * Removed the great vault (added by Blizzard)
 * Updated deDE, esES, esMX
