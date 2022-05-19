@@ -445,7 +445,13 @@ end
 function events:ZONE_CHANGED(...)
     addon:Refresh()
 
-    addon:debugmsg("Oribos: refreshed after ZONE_CHANGED")
+    if (C_Map.GetBestMapForUnit("player") == nil) then
+        -- occurs during the Shadowlands introduction quest chain in ICC.
+        addon:debugmsg("MapID is nil")
+        return
+    end
+
+    addon:debugmsg("refreshed after ZONE_CHANGED")
     addon:debugmsg("MapID: "..C_Map.GetBestMapForUnit("player"))
 
     if C_Map.GetBestMapForUnit("player") == 1671 then
@@ -456,7 +462,7 @@ end
 function events:ZONE_CHANGED_INDOORS(...)
     addon:Refresh()
 
-    addon:debugmsg("Oribos: refreshed after ZONE_CHANGED_INDOORS")
+    addon:debugmsg("refreshed after ZONE_CHANGED_INDOORS")
 
     -- Set automatically a waypoint (Blizzard, TomTom or both) to the flightmaster.
     if private.db.fmaster_waypoint and C_Map.GetBestMapForUnit("player") == 1671 then
@@ -469,13 +475,13 @@ end
 function events:QUEST_FINISHED(...)
     addon:Refresh()
 
-    addon:debugmsg("Oribos: refreshed after QUEST_FINISHED")
+    addon:debugmsg("refreshed after QUEST_FINISHED")
 end
 
 function events:SKILL_LINES_CHANGED(...)
     addon:Refresh()
 
-    addon:debugmsg("Oribos: refreshed after SKILL_LINES_CHANGED")
+    addon:debugmsg("refreshed after SKILL_LINES_CHANGED")
 end
 
 frame:SetScript("OnEvent", function(self, event, ...)
