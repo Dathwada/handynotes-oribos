@@ -39,7 +39,7 @@
 * `koKR` - Korean (thanks [unrealcrom96](https://www.curseforge.com/members/unrealcrom96)!)
 * `ptBR` - Brazilian Portuguese (thanks [Mikedrs](https://www.curseforge.com/members/mikedrs)!)
 * `ruRU` - Russian (thanks [Werloz](https://www.curseforge.com/members/werloz)!)
-* `zhCN` - Simplified Chinese (thanks [nbyang](https://www.curseforge.com/members/nbyang)!)
+* `zhCN` - Simplified Chinese (thanks [nbyang](https://www.curseforge.com/members/nbyang) and [nanjuekaien1](https://github.com/nanjuekaien1)!)
 * `zhTW` - Traditional Chinese (thanks [RainbowUI](https://www.curseforge.com/members/rainbowui)!)
 
 If you wish to help localize this plugin, please go to [Localization](https://www.curseforge.com/wow/addons/handynotes-oribos/localization).
