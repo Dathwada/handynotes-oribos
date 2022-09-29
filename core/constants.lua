@@ -70,6 +70,7 @@ constants.defaults = {
         fmaster_waypoint = true,
         fmaster_waypoint_dropdown = 1,
         easy_waypoint = true,
+        easy_waypoint_dropdown = 1,
 
         force_nodes = false,
         show_prints = false,
