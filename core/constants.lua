@@ -67,6 +67,8 @@ constants.defaults = {
         -- show_others = true,
 
         show_onlymytrainers = false,
+        picons_vendor = false,
+        picons_trainer = false,
         fmaster_waypoint = true,
         fmaster_waypoint_dropdown = 1,
         easy_waypoint = true,
