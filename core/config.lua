@@ -85,12 +85,20 @@ config.options = {
                     desc = L["config_picons_trainer_desc"],
                     order = 33.2,
                 },
+                use_old_picons = {
+                    type = "toggle",
+                    width = "full",
+                    name = L["config_use_old_picons"],
+                    desc = L["config_use_old_picons_desc"],
+                    disabled = function() return not (private.db.picons_trainer or private.db.picons_vendor) end,
+                    order = 34,
+                },
                 fmaster_waypoint = {
                     type = "toggle",
                     width = 1.3,
                     name = L["config_fmaster_waypoint"],
                     desc = L["config_fmaster_waypoint_desc"],
-                    order = 34,
+                    order = 35,
                 },
                 fmaster_waypoint_dropdown = {
                     type = "select",
@@ -100,14 +108,14 @@ config.options = {
                     name = L["config_waypoint_dropdown"],
                     desc = L["config_waypoint_dropdown_desc"],
                     width = 0.7,
-                    order = 35,
+                    order = 36,
                 },
                 easy_waypoint = {
                     type = "toggle",
                     width = 1.3,
                     name = L["config_easy_waypoints"],
                     desc = L["config_easy_waypoints_desc"],
-                    order = 36,
+                    order = 37,
                 },
                 easy_waypoint_dropdown = {
                     type = "select",
@@ -117,7 +125,7 @@ config.options = {
                     name = L["config_waypoint_dropdown"],
                     desc = L["config_waypoint_dropdown_desc"],
                     width = 0.7,
-                    order = 37,
+                    order = 38,
                 },
                 unhide = {
                     type = "execute",
@@ -131,7 +139,7 @@ config.options = {
                         addon:Refresh()
                         print("Oribos: "..L["config_restore_nodes_print"])
                     end,
-                    order = 38,
+                    order = 39,
                 },
             },
             },
