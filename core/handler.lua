@@ -197,7 +197,7 @@ local GetPointInfo = function(point)
     if (point) then
         local label = GetCreatureNamebyID(point.npc) or point.label or point.multilabel and Prepare(point.multilabel) or UNKNOWN
         if (point.icon == "portal" and point.quest and not IsQuestCompleted(point.quest)) then
-            icon = private.constants.icon["MagePortalHorde"]
+            icon = private.constants.icon["portal_red"]
         else
             icon = SetIcon(point)
         end
