@@ -31,7 +31,7 @@ local RetrievingData    = L["handler_tooltip_data"]
 ----------------------------------------------------------------------------------------------------
 
 local NPClinkOribos = CreateFrame("GameTooltip", "NPClinkOribos", UIParent, "GameTooltipTemplate")
-local function GetCreatureNamebyID(id)
+local function GetCreatureNameByID(id)
     if (not id) then return end
 
 	NPClinkOribos:SetOwner(UIParent, "ANCHOR_NONE")
@@ -80,7 +80,7 @@ local function CreateFlightMasterWaypoint()
         addon:debugmsg("Create Blizzard")
     elseif (IsAddOnLoaded("TomTom") and dropdown == 2) then
         -- create TomTom waypoint
-        private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
+        private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         fmaster_waypoint = 1
         addon:debugmsg("Create TomTom")
     elseif (dropdown == 3) then
@@ -88,7 +88,7 @@ local function CreateFlightMasterWaypoint()
         C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
         if (IsAddOnLoaded("TomTom")) then
-            private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNamebyID(162666)})
+            private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         end
         fmaster_waypoint = 1
         addon:debugmsg("Create Both")
@@ -205,7 +205,7 @@ end
 local GetPointInfo = function(point)
     local icon
     if (point) then
-        local label = GetCreatureNamebyID(point.npc) or point.label or point.multilabel and Prepare(point.multilabel) or UNKNOWN
+        local label = GetCreatureNameByID(point.npc) or point.label or point.multilabel and Prepare(point.multilabel) or UNKNOWN
         if (point.icon == "portal" and point.quest and not IsQuestCompleted(point.quest)) then
             icon = private.constants.icon["portal_red"]
         else
@@ -227,7 +227,7 @@ local function SetTooltip(tooltip, point)
 
     if (point) then
         if (point.npc) then
-            local name, sublabel = GetCreatureNamebyID(point.npc)
+            local name, sublabel = GetCreatureNameByID(point.npc)
             if (name) then
                 tooltip:AddLine(name)
             end
