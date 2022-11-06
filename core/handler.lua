@@ -32,6 +32,8 @@ local RetrievingData    = L["handler_tooltip_data"]
 
 local NPClinkOribos = CreateFrame("GameTooltip", "NPClinkOribos", UIParent, "GameTooltipTemplate")
 local function GetCreatureNamebyID(id)
+    if (not id) then return end
+
 	NPClinkOribos:SetOwner(UIParent, "ANCHOR_NONE")
 	NPClinkOribos:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(id))
     local name      = _G["NPClinkOribosTextLeft1"]:GetText()
