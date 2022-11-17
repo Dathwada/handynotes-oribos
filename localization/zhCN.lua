@@ -3,7 +3,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_Oribos", "zhCN", false,
 if not L then return end
 -- Simplified Chinese localization by nbyang ( https://www.curseforge.com/members/nbyang )
 --  zhCN client: (NGA-男爵凯恩)
---  Last update: 2022/06/07
+--  Last update: 2022/11/17
 if L then
 ----------------------------------------------------------------------------------------------------
 -----------------------------------------------CONFIG-----------------------------------------------
@@ -110,8 +110,8 @@ L["dev_config_tab"] = "DEV"
 L["dev_config_force_nodes"] = "强制显示"
 L["dev_config_force_nodes_desc"] = "无论你的职业或阵营, 强制显示所有的点."
 
-L["dev_config_show_prints"] = "显示 print()"
-L["dev_config_show_prints_desc"] = "在聊天窗口中显示 print() 的信息"
+L["dev_config_show_prints"] = "显示标记()"
+L["dev_config_show_prints_desc"] = "在聊天窗口中显示标记()的信息"
 
 ----------------------------------------------------------------------------------------------------
 -----------------------------------------------HANDLER----------------------------------------------
@@ -121,7 +121,7 @@ L["dev_config_show_prints_desc"] = "在聊天窗口中显示 print() 的信息"
 
 L["handler_context_menu_addon_name"] = "HandyNotes: 奥利波斯"
 L["handler_context_menu_add_tomtom"] = "添加到 TomTom"
--- L['handler_context_menu_add_map_pin'] = "Set map waypoint"
+-- L['handler_context_menu_add_map_pin'] = "设置地图航点"
 L["handler_context_menu_hide_node"] = "隐藏这个图标"
 
 --============================================TOOLTIPS============================================--
