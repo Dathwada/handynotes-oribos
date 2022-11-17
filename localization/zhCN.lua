@@ -134,15 +134,15 @@ L["handler_tooltip_quest"] = "解锁任务"
 ----------------------------------------------DATABASE----------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-L["Portal to Orgrimmar"] = "奥格瑞玛传送门"
-L["Portal to Stormwind"] = "暴风城传送门"
+L["Portal to Orgrimmar"] = "通往奥格瑞玛"
+L["Portal to Stormwind"] = "通往暴风城"
 L["To Ring of Transference"] = "前往转移之环"
 L["To Ring of Fates"] = "前往命运之环"
 L["Into the Maw"] = "进入噬渊"
 L["To Keeper's Respite"] = "前往守护者的休憩"
-L["Portal to Zereth Mortis"] = "前往扎雷殁提斯"
-L["Portal to Karazhan"] = "前往卡拉赞"
-L["Portal to Mechagon"] = "前往麦卡贡"
-L["Portal to Gorgrond"] = "前往戈尔隆德"
+L["Portal to Zereth Mortis"] = "通往扎雷殁提斯"
+L["Portal to Karazhan"] = "通往卡拉赞"
+L["Portal to Mechagon"] = "通往麦卡贡"
+L["Portal to Gorgrond"] = "通往戈尔隆德"
 L["Mailbox"] = "邮箱"
 end
