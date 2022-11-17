@@ -93,7 +93,7 @@ L["Both"] = "同时显示"
 L["config_easy_waypoints"] = "便捷导航"
 L["config_easy_waypoints_desc"] = "使你可以更简单的建立导航路线, 你可以通过右键单击设定导航点或者使用CTRL+右键单击获得更多选项."
 
-L["config_picons"] = "显示商业图标"
+L["config_picons"] = "显示专业图标"
 L["config_picons_vendor_desc"] = "显示专业图标而不是商人图标"
 L["config_picons_trainer_desc"] = "显示专业图标而不是训练师图标"
 
