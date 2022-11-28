@@ -84,18 +84,21 @@ L["config_onlymytrainers_desc"] = [[
 
 L["config_fmaster_waypoint"] = "飞行点导航"
 L["config_fmaster_waypoint_desc"] = "当你进入转移之环时, 自动在飞行点建立导航点."
+
+L["config_easy_waypoints"] = "便捷导航"
+L["config_easy_waypoints_desc"] = "使你可以更简单的建立导航路线, 你可以通过右键单击设定导航点或者使用CTRL+右键单击获得更多选项."
+
 L["config_waypoint_dropdown"] = "选择"
 L["config_waypoint_dropdown_desc"] = "选择如何建立导航点"
 L["Blizzard"] = "暴雪原生"
 L["TomTom"] = true
 L["Both"] = "同时显示"
 
-L["config_easy_waypoints"] = "便捷导航"
-L["config_easy_waypoints_desc"] = "使你可以更简单的建立导航路线, 你可以通过右键单击设定导航点或者使用CTRL+右键单击获得更多选项."
-
 L["config_picons"] = "显示专业图标"
 L["config_picons_vendor_desc"] = "显示专业图标而不是商人图标"
 L["config_picons_trainer_desc"] = "显示专业图标而不是训练师图标"
+-- L["config_use_old_picons"] = "Show the old profession symbols"
+-- L["config_use_old_picons_desc"] = "Show the old profession icons again instead of the new ones (before Dragonflight)."
 
 L["config_restore_nodes"] = "恢复被隐藏的图标"
 L["config_restore_nodes_desc"] = "恢复被你隐藏掉的图标"
@@ -121,7 +124,7 @@ L["dev_config_show_prints_desc"] = "在聊天窗口中显示标记()的信息"
 
 L["handler_context_menu_addon_name"] = "HandyNotes: 奥利波斯"
 L["handler_context_menu_add_tomtom"] = "添加到 TomTom"
--- L['handler_context_menu_add_map_pin'] = "设置地图航点"
+L['handler_context_menu_add_map_pin'] = "设置地图航点"
 L["handler_context_menu_hide_node"] = "隐藏这个图标"
 
 --============================================TOOLTIPS============================================--
@@ -145,4 +148,5 @@ L["Portal to Karazhan"] = "通往卡拉赞"
 L["Portal to Mechagon"] = "通往麦卡贡"
 L["Portal to Gorgrond"] = "通往戈尔隆德"
 L["Mailbox"] = "邮箱"
+
 end
