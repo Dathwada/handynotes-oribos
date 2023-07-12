@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v26 (July 12, 2023)
+-------------------------------
+* Bump .toc to 100105
+* Updated localizations
+
 #### v25 (May 05, 2023)
 -------------------------------
 * Add IconTexture to .toc
