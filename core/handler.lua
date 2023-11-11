@@ -78,7 +78,7 @@ local function CreateFlightMasterWaypoint()
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
         fmaster_waypoint = 1
         addon:debugmsg("Create Blizzard")
-    elseif (IsAddOnLoaded("TomTom") and dropdown == 2) then
+    elseif (C_AddOns.IsAddOnLoaded("TomTom") and dropdown == 2) then
         -- create TomTom waypoint
         private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         fmaster_waypoint = 1
@@ -87,7 +87,7 @@ local function CreateFlightMasterWaypoint()
         -- create both waypoints
         C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
-        if (IsAddOnLoaded("TomTom")) then
+        if (C_AddOns.IsAddOnLoaded("TomTom")) then
             private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         end
         fmaster_waypoint = 1
@@ -104,7 +104,7 @@ local function RemoveFlightMasterWaypoint()
             C_Map.ClearUserWaypoint()
             fmaster_waypoint = 0
             addon:debugmsg("Remove Blizzard")
-        elseif (IsAddOnLoaded("TomTom") and dropdown == 2) then
+        elseif (C_AddOns.IsAddOnLoaded("TomTom") and dropdown == 2) then
             -- remove TomTom waypoint
             TomTom:RemoveWaypoint(private.uid)
             fmaster_waypoint = 0
@@ -112,7 +112,7 @@ local function RemoveFlightMasterWaypoint()
         elseif (dropdown == 3) then
             -- remove both waypoints
             C_Map.ClearUserWaypoint()
-            if (IsAddOnLoaded("TomTom")) then
+            if (C_AddOns.IsAddOnLoaded("TomTom")) then
                 TomTom:RemoveWaypoint(private.uid)
             end
             fmaster_waypoint = 0
@@ -298,7 +298,7 @@ local function closeAllDropdowns()
 end
 
 local function addTomTomWaypoint(button, uMapID, coord)
-    if (IsAddOnLoaded("TomTom")) then
+    if (C_AddOns.IsAddOnLoaded("TomTom")) then
         local x, y = HandyNotes:getXY(coord)
         TomTom:AddWaypoint(uMapID, x, y, {
             title = GetPointInfoByCoord(uMapID, coord),
@@ -340,7 +340,7 @@ do
             }, level)
 
             -- TomTom waypoint menu item
-            if (IsAddOnLoaded("TomTom")) then
+            if (C_AddOns.IsAddOnLoaded("TomTom")) then
                 UIDropDownMenu_AddButton({
                     text = L["handler_context_menu_add_tomtom"],
                     notCheckable = true,
@@ -383,7 +383,7 @@ do
     HL_Dropdown.initialize = generateMenu
 
     function PluginHandler:OnClick(button, down, uMapID, coord)
-        local TomTom = select(2, IsAddOnLoaded('TomTom'))
+        local TomTom = select(2, C_AddOns.IsAddOnLoaded('TomTom'))
         local dropdown = private.db.easy_waypoint_dropdown
 
         if (down or button ~= "RightButton") then return end
@@ -456,8 +456,8 @@ local currentMapID = nil
         if (point.icon == "guildvault" and not private.db.show_guildvault) then return false end
         if (point.icon == "innkeeper" and not private.db.show_innkeeper) then return false end
         if (point.icon == "mail" and not private.db.show_mail) then return false end
-        if (point.icon == "portal" and (not private.db.show_portal or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
-        if (point.icon == "tpplatform" and (not private.db.show_tpplatform or IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+        if (point.icon == "portal" and (not private.db.show_portal or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+        if (point.icon == "tpplatform" and (not private.db.show_tpplatform or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
         if (point.icon == "reforge" and not private.db.show_reforge) then return false end
         if (point.icon == "stablemaster" and not private.db.show_stablemaster) then return false end
         if (point.icon == "trainer" and not private.db.show_trainer) then return false end
