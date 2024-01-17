@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v29 (January 17, 2024)
+-------------------------------
+* Updated IsAddOnLoaded
+* Bump .toc to 100205
+
 #### v28 (November 08, 2023)
 -------------------------------
 * Bump .toc to 100200
