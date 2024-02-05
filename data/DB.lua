@@ -27,12 +27,6 @@ local IntoTheMaw = L["Into the Maw"]
 local Korthia = GetMapNames(1543, 1961)
 local KeepersRespite = L["To Keeper's Respite"]
 local PtoZerethMortis = L["Portal to Zereth Mortis"]
-local PtoKarazhan = L["Portal to Karazhan"]
-local DeadwindPass = GetMapNames(13, 42)
-local PtoMechagon = L["Portal to Mechagon"]
-local KulTiras = GetMapNames(876)
-local PtoGorgrond = L["Portal to Gorgrond"]
-local Draenor = GetMapNames(572)
 
 local guildvault = L["config_guildvault"]
 local mailbox = L["Mailbox"]
@@ -146,8 +140,7 @@ DB.points = {
     [62183266] = { icon="necrolord", label=C_Map.GetMapInfo(1536).name },
     [49587788] = { icon="nightfae", label=C_Map.GetMapInfo(1565).name },
     [32015156] = { icon="venthyr", label=C_Map.GetMapInfo(1525).name },
-    [49562609] = { icon="portal", label=PtoZerethMortis, quest=64957 },
-    [56267594] = { icon="portal", multilabel={PtoKarazhan, PtoGorgrond, PtoMechagon}, multinote={DeadwindPass, Draenor, KulTiras} }
+    [49562609] = { icon="portal", label=PtoZerethMortis, quest=64957 }
 },
 
 [1672] = {

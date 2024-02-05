@@ -144,9 +144,6 @@ L["To Ring of Fates"] = "前往命运之环"
 L["Into the Maw"] = "进入噬渊"
 L["To Keeper's Respite"] = "前往守护者的休憩"
 L["Portal to Zereth Mortis"] = "通往扎雷殁提斯"
-L["Portal to Karazhan"] = "通往卡拉赞"
-L["Portal to Mechagon"] = "通往麦卡贡"
-L["Portal to Gorgrond"] = "通往戈尔隆德"
 L["Mailbox"] = "邮箱"
 
 end

@@ -142,9 +142,6 @@ L["To Ring of Fates"] = true
 L["Into the Maw"] = true
 L["To Keeper's Respite"] = true
 L["Portal to Zereth Mortis"] = true
-L["Portal to Karazhan"] = true
-L["Portal to Mechagon"] = true
-L["Portal to Gorgrond"] = true
 L["Mailbox"] = true
 
 end
