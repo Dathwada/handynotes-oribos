@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v30 (March 20, 2024)
+-------------------------------
+* Removed Shadowlands Season 4 Portals
+* Bump .toc to 100206
+
 #### v29 (January 17, 2024)
 -------------------------------
 * Updated IsAddOnLoaded
