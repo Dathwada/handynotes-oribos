@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v31 (May 07, 2024)
+-------------------------------
+* Updated localizations
+* Bump .toc to 100207
+
 #### v30 (March 20, 2024)
 -------------------------------
 * Removed Shadowlands Season 4 Portals
