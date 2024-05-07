@@ -75,6 +75,7 @@ L["dev_config_force_nodes_desc"] = "Force l'affichage de tous les nœuds indépe
 L["dev_config_show_prints"] = "Afficher print()"
 L["dev_config_show_prints_desc"] = "Afficher les messages print() dans la fenêtre de discussion."
 L["dev_config_tab"] = "DEV"
+L["handler_context_menu_add_map_pin"] = "Marque les waypoint sur la carte"
 L["handler_context_menu_add_tomtom"] = "Ajouter à TomTom"
 L["handler_context_menu_addon_name"] = "HandyNotes: Oribos"
 L["handler_context_menu_hide_node"] = "Masquer ce nœud"
