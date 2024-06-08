@@ -2,21 +2,21 @@
 ------------------------------------------AddOn NAMESPACE-------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-local FOLDER_NAME, private = ...
+local FOLDER_NAME, ns = ...
 
 local addon = LibStub("AceAddon-3.0"):NewAddon(FOLDER_NAME, "AceEvent-3.0")
 local AceDB = LibStub("AceDB-3.0")
 local HandyNotes = LibStub("AceAddon-3.0"):GetAddon("HandyNotes")
 local HBD = LibStub('HereBeDragons-2.0')
 local L = LibStub("AceLocale-3.0"):GetLocale(FOLDER_NAME)
-private.locale = L
+ns.locale = L
 
-addon.constants = private.constants
+addon.constants = ns.constants
 
 _G.HandyNotes_Oribos = addon
 
 local IsQuestCompleted = C_QuestLog.IsQuestFlaggedCompleted
-local constantsicon = private.constants.icon
+local constantsicon = ns.constants.icon
 
 ----------------------------------------------------------------------------------------------------
 -----------------------------------------------LOCALS-----------------------------------------------
@@ -70,7 +70,7 @@ end
 
 local fmaster_waypoint = 0
 local function CreateFlightMasterWaypoint()
-    local dropdown = private.db.fmaster_waypoint_dropdown
+    local dropdown = ns.db.fmaster_waypoint_dropdown
 
     if (dropdown == 1) then
         -- create Blizzard waypoint
@@ -80,7 +80,7 @@ local function CreateFlightMasterWaypoint()
         addon:debugmsg("Create Blizzard")
     elseif (C_AddOns.IsAddOnLoaded("TomTom") and dropdown == 2) then
         -- create TomTom waypoint
-        private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
+        ns.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         fmaster_waypoint = 1
         addon:debugmsg("Create TomTom")
     elseif (dropdown == 3) then
@@ -88,7 +88,7 @@ local function CreateFlightMasterWaypoint()
         C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
         if (C_AddOns.IsAddOnLoaded("TomTom")) then
-            private.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
+            ns.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
         end
         fmaster_waypoint = 1
         addon:debugmsg("Create Both")
@@ -96,7 +96,7 @@ local function CreateFlightMasterWaypoint()
 end
 
 local function RemoveFlightMasterWaypoint()
-    local dropdown = private.db.fmaster_waypoint_dropdown
+    local dropdown = ns.db.fmaster_waypoint_dropdown
 
     if (fmaster_waypoint == 1) then
         if (dropdown == 1) then
@@ -106,14 +106,14 @@ local function RemoveFlightMasterWaypoint()
             addon:debugmsg("Remove Blizzard")
         elseif (C_AddOns.IsAddOnLoaded("TomTom") and dropdown == 2) then
             -- remove TomTom waypoint
-            TomTom:RemoveWaypoint(private.uid)
+            TomTom:RemoveWaypoint(ns.uid)
             fmaster_waypoint = 0
             addon:debugmsg("Remove TomTom")
         elseif (dropdown == 3) then
             -- remove both waypoints
             C_Map.ClearUserWaypoint()
             if (C_AddOns.IsAddOnLoaded("TomTom")) then
-                TomTom:RemoveWaypoint(private.uid)
+                TomTom:RemoveWaypoint(ns.uid)
             end
             fmaster_waypoint = 0
             addon:debugmsg("Remove Both")
@@ -157,16 +157,16 @@ end
 ------------------------------------------------ICON------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-local function SetIcon(point)
-    local icon_key = point.icon
+local function SetIcon(node)
+    local icon_key = node.icon
 
-    if (point.picon) then
-        if (private.db.picons_vendor and point.icon == "vendor") then
-            icon_key = private.db.use_old_picons and point.picon.."_old" or point.picon
+    if (node.picon) then
+        if (ns.db.picons_vendor and node.icon == "vendor") then
+            icon_key = ns.db.use_old_picons and node.picon.."_old" or node.picon
         end
 
-        if (private.db.picons_trainer and point.icon == "trainer") then
-            icon_key = private.db.use_old_picons and point.picon.."_old" or point.picon
+        if (ns.db.picons_trainer and node.icon == "trainer") then
+            icon_key = ns.db.use_old_picons and node.picon.."_old" or node.picon
         end
     end
 
@@ -177,57 +177,57 @@ end
 
 local function GetIconScale(icon, picon)
     -- makes the picon smaller
-    if (picon ~= nil and private.db.picons_vendor and icon == "vendor") then return private.db["icon_scale_vendor"] * 0.75 end
-    if (picon ~= nil and private.db.picons_trainer and icon == "trainer") then return private.db["icon_scale_trainer"] * 0.75 end
+    if (picon ~= nil and ns.db.picons_vendor and icon == "vendor") then return ns.db["icon_scale_vendor"] * 0.75 end
+    if (picon ~= nil and ns.db.picons_trainer and icon == "trainer") then return ns.db["icon_scale_trainer"] * 0.75 end
     -- anvil npcs are vendors
     if (icon == "anvil") then
-        return private.db["icon_scale_vendor"]
+        return ns.db["icon_scale_vendor"]
     -- combine the four zone gateway icons
     elseif (icon == "kyrian" or icon == "necrolord" or icon == "nightfae" or icon == "venthyr") then
-        return  private.db["icon_scale_zonegateway"]
+        return  ns.db["icon_scale_zonegateway"]
     end
 
-    return private.db["icon_scale_"..icon]
+    return ns.db["icon_scale_"..icon]
 end
 
 local function GetIconAlpha(icon)
     -- anvil npcs are vendors
     if (icon == "anvil") then
-        return private.db["icon_alpha_vendor"]
+        return ns.db["icon_alpha_vendor"]
     -- combine the four zone gateway icons
     elseif (icon == "kyrian" or icon == "necrolord" or icon == "nightfae" or icon == "venthyr") then
-        return  private.db["icon_alpha_zonegateway"]
+        return  ns.db["icon_alpha_zonegateway"]
     end
 
-    return private.db["icon_alpha_"..icon]
+    return ns.db["icon_alpha_"..icon]
 end
 
-local GetPointInfo = function(point)
+local GetNodeInfo = function(node)
     local icon
-    if (point) then
-        local label = GetCreatureNameByID(point.npc) or point.label or point.multilabel and Prepare(point.multilabel) or UNKNOWN
-        if (point.icon == "portal" and point.quest and not IsQuestCompleted(point.quest)) then
-            icon = private.constants.icon["portal_red"]
+    if (node) then
+        local label = GetCreatureNameByID(node.npc) or node.label or node.multilabel and Prepare(node.multilabel) or UNKNOWN
+        if (node.icon == "portal" and node.quest and not IsQuestCompleted(node.quest)) then
+            icon = ns.constants.icon["portal_red"]
         else
-            icon = SetIcon(point)
+            icon = SetIcon(node)
         end
-        return label, icon, point.icon, point.picon, point.scale, point.alpha -- icon returns the path
+        return label, icon, node.icon, node.picon, node.scale, node.alpha -- icon returns the path
     end
 end
 
-local GetPointInfoByCoord = function(uMapID, coord)
-    return GetPointInfo(private.DB.points[uMapID] and private.DB.points[uMapID][coord])
+local GetNodeInfoByCoord = function(uMapID, coord)
+    return GetNodeInfo(ns.DB.nodes[uMapID] and ns.DB.nodes[uMapID][coord])
 end
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------TOOLTIP-----------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-local function SetTooltip(tooltip, point)
+local function SetTooltip(tooltip, node)
 
-    if (point) then
-        if (point.npc) then
-            local name, sublabel = GetCreatureNameByID(point.npc)
+    if (node) then
+        if (node.npc) then
+            local name, sublabel = GetCreatureNameByID(node.npc)
             if (name) then
                 tooltip:AddLine(name)
             end
@@ -235,18 +235,18 @@ local function SetTooltip(tooltip, point)
                 tooltip:AddLine(sublabel,1,1,1)
             end
         end
-        if (point.label) then
-            tooltip:AddLine(point.label)
+        if (node.label) then
+            tooltip:AddLine(node.label)
         end
-        if (point.note) then
-            tooltip:AddLine("("..point.note..")")
+        if (node.note) then
+            tooltip:AddLine("("..node.note..")")
         end
-        if (point.multilabel) then
-            tooltip:AddLine(Prepare(point.multilabel, point.multinote))
+        if (node.multilabel) then
+            tooltip:AddLine(Prepare(node.multilabel, node.multinote))
         end
-        if (point.quest and not IsQuestCompleted(point.quest)) then
-            if (C_QuestLog.GetTitleForQuestID(point.quest) ~= nil) then
-                tooltip:AddLine(RequiresQuest..": ["..C_QuestLog.GetTitleForQuestID(point.quest).."] (ID: "..point.quest..")",1,0,0)
+        if (node.quest and not IsQuestCompleted(node.quest)) then
+            if (C_QuestLog.GetTitleForQuestID(node.quest) ~= nil) then
+                tooltip:AddLine(RequiresQuest..": ["..C_QuestLog.GetTitleForQuestID(node.quest).."] (ID: "..node.quest..")",1,0,0)
             else
                 tooltip:AddLine(RetrievingData,1,0,1) -- pink
                 C_Timer.After(1, function() addon:Refresh() end) -- Refresh
@@ -260,7 +260,7 @@ local function SetTooltip(tooltip, point)
 end
 
 local SetTooltipByCoord = function(tooltip, uMapID, coord)
-    return SetTooltip(tooltip, private.DB.points[uMapID] and private.DB.points[uMapID][coord])
+    return SetTooltip(tooltip, ns.DB.nodes[uMapID] and ns.DB.nodes[uMapID][coord])
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -289,7 +289,7 @@ function PluginHandler:OnLeave(uMapID, coord)
 end
 
 local function hideNode(button, uMapID, coord)
-    private.hidden[uMapID][coord] = true
+    ns.hidden[uMapID][coord] = true
     addon:Refresh()
 end
 
@@ -301,7 +301,7 @@ local function addTomTomWaypoint(button, uMapID, coord)
     if (C_AddOns.IsAddOnLoaded("TomTom")) then
         local x, y = HandyNotes:getXY(coord)
         TomTom:AddWaypoint(uMapID, x, y, {
-            title = GetPointInfoByCoord(uMapID, coord),
+            title = GetNodeInfoByCoord(uMapID, coord),
             from = L["handler_context_menu_addon_name"],
             persistent = nil,
             minimap = true,
@@ -384,15 +384,15 @@ do
 
     function PluginHandler:OnClick(button, down, uMapID, coord)
         local TomTom = select(2, C_AddOns.IsAddOnLoaded('TomTom'))
-        local dropdown = private.db.easy_waypoint_dropdown
+        local dropdown = ns.db.easy_waypoint_dropdown
 
         if (down or button ~= "RightButton") then return end
 
-        if (button == "RightButton" and not down and not private.db.easy_waypoint) then
+        if (button == "RightButton" and not down and not ns.db.easy_waypoint) then
             currentMapID = uMapID
             currentCoord = coord
             ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
-        elseif (IsControlKeyDown() and private.db.easy_waypoint) then
+        elseif (IsControlKeyDown() and ns.db.easy_waypoint) then
             currentMapID = uMapID
             currentCoord = coord
             ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
@@ -408,14 +408,13 @@ do
 end
 
 do
-
-local currentMapID = nil
+    local currentMapID = nil
     local function iter(t, prestate)
         if (not t) then return nil end
         local state, value = next(t, prestate)
         while state do
-            if (value and private:ShouldShow(state, value, currentMapID)) then
-                local _, icon, iconname, piconname, scale, alpha = GetPointInfo(value)
+            if (value and ns:ShouldShow(state, value, currentMapID)) then
+                local _, icon, iconname, piconname, scale, alpha = GetNodeInfo(value)
                     scale = (scale or 1) * GetIconScale(iconname, piconname)
                     alpha = (alpha or 1) * GetIconAlpha(iconname)
                 return state, nil, icon, scale, alpha
@@ -424,49 +423,51 @@ local currentMapID = nil
         end
         return nil, nil, nil, nil, nil, nil
     end
+
     function PluginHandler:GetNodes2(uMapID, minimap)
         currentMapID = uMapID
-        return iter, private.DB.points[uMapID], nil
+        return iter, ns.DB.nodes[uMapID], nil
     end
-    function private:ShouldShow(coord, point, currentMapID)
-    if (not private.db.force_nodes) then
-        if (private.hidden[currentMapID] and private.hidden[currentMapID][coord]) then
-            return false
+
+    function ns:ShouldShow(coord, node, currentMapID)
+        if (not ns.db.force_nodes) then
+            if (ns.hidden[currentMapID] and ns.hidden[currentMapID][coord]) then
+                return false
+            end
+            -- this will check if any node is for a specific class
+            if (node.class and node.class ~= select(2, UnitClass("player"))) then
+                return false
+            end
+            -- this will check if any node is for a specific faction
+            if (node.faction and node.faction ~= select(1, UnitFactionGroup("player"))) then
+                return false
+            end
+            -- this will check if any node is for a specific covenant
+            if (node.covenant and node.covenant ~= C_Covenants.GetActiveCovenantID()) then
+                return false
+            end
+            -- this will check if the node is for a specific profession
+            if (node.profession and (not addon:CharacterHasProfession(node.profession) and HasTwoProfessions()) and ns.db.show_onlymytrainers and not node.auctioneer) then
+                return false
+            end
+            if (node.icon == "auctioneer" and (not addon:CharacterHasProfession(node.profession) or not ns.db.show_auctioneer)) then return false end
+            if (node.icon == "banker" and not ns.db.show_banker) then return false end
+            if (node.icon == "barber" and not ns.db.show_barber) then return false end
+            if (node.icon == "greatvault" and not ns.db.show_greatvault) then return false end
+            if (node.icon == "guildvault" and not ns.db.show_guildvault) then return false end
+            if (node.icon == "innkeeper" and not ns.db.show_innkeeper) then return false end
+            if (node.icon == "mail" and not ns.db.show_mail) then return false end
+            if (node.icon == "portal" and (not ns.db.show_portal or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+            if (node.icon == "tpplatform" and (not ns.db.show_tpplatform or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
+            if (node.icon == "reforge" and not ns.db.show_reforge) then return false end
+            if (node.icon == "stablemaster" and not ns.db.show_stablemaster) then return false end
+            if (node.icon == "trainer" and not ns.db.show_trainer) then return false end
+            if (node.icon == "portaltrainer" and not ns.db.show_portaltrainer) then return false end
+            if (node.icon == "transmogrifier" and not ns.db.show_transmogrifier) then return false end
+            if ((node.icon == "vendor" or node.icon == "anvil") and not ns.db.show_vendor) then return false end
+            if (node.icon == "void" and not ns.db.show_void) then return false end
+            if ((node.icon == "kyrian" or node.icon == "necrolord" or node.icon == "nightfae" or node.icon == "venthyr") and not ns.db.show_zonegateway) then return false end
         end
-        -- this will check if any node is for a specific class
-        if (point.class and point.class ~= select(2, UnitClass("player"))) then
-            return false
-        end
-        -- this will check if any node is for a specific faction
-        if (point.faction and point.faction ~= select(1, UnitFactionGroup("player"))) then
-            return false
-        end
-        -- this will check if any node is for a specific covenant
-        if (point.covenant and point.covenant ~= C_Covenants.GetActiveCovenantID()) then
-            return false
-        end
-        -- this will check if the node is for a specific profession
-        if (point.profession and (not addon:CharacterHasProfession(point.profession) and HasTwoProfessions()) and private.db.show_onlymytrainers and not point.auctioneer) then
-            return false
-        end
-        if (point.icon == "auctioneer" and (not addon:CharacterHasProfession(point.profession) or not private.db.show_auctioneer)) then return false end
-        if (point.icon == "banker" and not private.db.show_banker) then return false end
-        if (point.icon == "barber" and not private.db.show_barber) then return false end
-        if (point.icon == "greatvault" and not private.db.show_greatvault) then return false end
-        if (point.icon == "guildvault" and not private.db.show_guildvault) then return false end
-        if (point.icon == "innkeeper" and not private.db.show_innkeeper) then return false end
-        if (point.icon == "mail" and not private.db.show_mail) then return false end
-        if (point.icon == "portal" and (not private.db.show_portal or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
-        if (point.icon == "tpplatform" and (not private.db.show_tpplatform or C_AddOns.IsAddOnLoaded("HandyNotes_TravelGuide"))) then return false end
-        if (point.icon == "reforge" and not private.db.show_reforge) then return false end
-        if (point.icon == "stablemaster" and not private.db.show_stablemaster) then return false end
-        if (point.icon == "trainer" and not private.db.show_trainer) then return false end
-        if (point.icon == "portaltrainer" and not private.db.show_portaltrainer) then return false end
-        if (point.icon == "transmogrifier" and not private.db.show_transmogrifier) then return false end
-        if ((point.icon == "vendor" or point.icon == "anvil") and not private.db.show_vendor) then return false end
-        if (point.icon == "void" and not private.db.show_void) then return false end
-        if ((point.icon == "kyrian" or point.icon == "necrolord" or point.icon == "nightfae" or point.icon == "venthyr") and not private.db.show_zonegateway) then return false end
-    end
         return true
     end
 end
@@ -476,22 +477,22 @@ end
 ---------------------------------------------------------------------------------------------------
 
 function addon:OnInitialize()
-    self.db = AceDB:New(FOLDER_NAME.."DB", private.constants.defaults)
+    self.db = AceDB:New(FOLDER_NAME.."DB", ns.constants.defaults)
 
     profile = self.db.profile
-    private.db = profile
+    ns.db = profile
 
     global = self.db.global
-    private.global = global
+    ns.global = global
 
-    private.hidden = self.db.char.hidden
+    ns.hidden = self.db.char.hidden
 
-    if (private.global.dev) then
-        private.devmode()
+    if (ns.global.dev) then
+        ns.devmode()
     end
 
     -- Initialize database with HandyNotes
-    HandyNotes:RegisterPluginDB(addon.pluginName, PluginHandler, private.config.options)
+    HandyNotes:RegisterPluginDB(addon.pluginName, PluginHandler, ns.config.options)
 end
 
 function addon:Refresh()
@@ -534,7 +535,7 @@ function events:ZONE_CHANGED_INDOORS(...)
     addon:debugmsg("refreshed after ZONE_CHANGED_INDOORS")
 
     -- Set automatically a waypoint (Blizzard, TomTom or both) to the flightmaster.
-    if (private.db.fmaster_waypoint and C_Map.GetBestMapForUnit("player") == 1671) then
+    if (ns.db.fmaster_waypoint and C_Map.GetBestMapForUnit("player") == 1671) then
         CreateFlightMasterWaypoint()
     elseif (C_Map.GetBestMapForUnit("player") == 1670) then
         RemoveFlightMasterWaypoint()
