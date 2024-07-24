@@ -11,8 +11,6 @@ local HBD = LibStub('HereBeDragons-2.0')
 local L = LibStub("AceLocale-3.0"):GetLocale(FOLDER_NAME)
 ns.locale = L
 
-addon.constants = ns.constants
-
 _G.HandyNotes_Oribos = addon
 
 local IsQuestCompleted = C_QuestLog.IsQuestFlaggedCompleted
@@ -136,7 +134,7 @@ local function Prepare(label, note)
 
         -- set spell name as label
         if (type(name) == "number") then
-            name = GetSpellInfo(name)
+            name = C_Spell.GetSpellInfo(name).name
         end
 
         -- add additional notes
