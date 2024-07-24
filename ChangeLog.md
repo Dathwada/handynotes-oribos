@@ -1,5 +1,10 @@
 ## Revision History:
 
+#### v32 (July 24, 2024)
+-------------------------------
+* Updated for TWW API
+* Bump .toc to 110000
+
 #### v31 (May 07, 2024)
 -------------------------------
 * Updated localizations
