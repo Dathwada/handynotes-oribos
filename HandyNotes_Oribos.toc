@@ -1,4 +1,4 @@
-## Interface: 110200
+## Interface: 110205, 110207
 ## Title: HandyNotes: Oribos
 ## Title-ruRU: HandyNotes: Орибос
 ## Notes: Shows the NPC and POI locations in Oribos.
