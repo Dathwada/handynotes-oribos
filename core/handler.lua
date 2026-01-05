@@ -463,7 +463,6 @@ do
             if (node.icon == "portaltrainer" and not ns.db.show_portaltrainer) then return false end
             if (node.icon == "transmogrifier" and not ns.db.show_transmogrifier) then return false end
             if ((node.icon == "vendor" or node.icon == "anvil") and not ns.db.show_vendor) then return false end
-            if (node.icon == "void" and not ns.db.show_void) then return false end
             if ((node.icon == "kyrian" or node.icon == "necrolord" or node.icon == "nightfae" or node.icon == "venthyr") and not ns.db.show_zonegateway) then return false end
         end
         return true

@@ -99,7 +99,6 @@ DB.nodes = {
     [64456418] = { icon="barber", npc=156735 },
     [65196756] = { icon="vendor", npc=156769 },
     [64596987] = { icon="transmogrifier", npc=156663 },
-    [64407055] = { icon="void", npc=156664 },
     [61767215] = { icon="vendor", npc=169524 },
     [59257541] = { icon="stablemaster", npc=156791 },
     [56787554] = { icon="anvil", npc=173369 },

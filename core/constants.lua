@@ -41,8 +41,6 @@ constants.defaults = {
         icon_alpha_tpplatform = 1,
         icon_scale_vendor = 1.25,
         icon_alpha_vendor = 1,
-        icon_scale_void = 1.25,
-        icon_alpha_void = 1,
         icon_scale_zonegateway = 2,
         icon_alpha_zonegateway = 1,
         -- icon_scale_others = 1.25,
@@ -62,7 +60,6 @@ constants.defaults = {
         show_trainer = true,
         show_transmogrifier = true,
         show_vendor = true,
-        show_void = true,
         show_zonegateway = true,
         -- show_others = true,
 
@@ -108,7 +105,6 @@ constants.icongroup = {
     "transmogrifier",
     "tpplatform",
     "vendor",
-    "void",
     "zonegateway"
 }
 
@@ -131,7 +127,6 @@ constants.icon = {
     transmogrifier  = "Interface\\MINIMAP\\TRACKING\\Transmogrifier",
     tpplatform      = "Interface\\MINIMAP\\TempleofKotmogu_ball_cyan",
     vendor          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\vendor",
-    void            = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\void",
 
     -- covenant icons
     kyrian          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\kyrian",

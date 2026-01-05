@@ -64,9 +64,6 @@ L["config_transmogrifier_desc"] = "Zeigt die Position des Transmogrifizierers an
 L["config_vendor"] = "Händler"
 L["config_vendor_desc"] = "Zeigt die Positionen der Händler an."
 
-L["config_void"] = "Leerenlager"
-L["config_void_desc"] = "Zeigt die Position des Leerenlagers an."
-
 L["config_zonegateway"] = "Zonen Gateways"
 L["config_zonegateway_desc"] = "Zeigt die Positionen der Zonen Gateways an."
 

@@ -15,7 +15,6 @@
     * ![](https://i.imgur.com/sKsc6Jc.png) Profession Trainers
     * ![](https://i.imgur.com/71Ybhb5.png) Transmogrifier
     * ![](https://i.imgur.com/OlyHdAf.png) ![](https://i.imgur.com/8Z3EJlm.png) Vendors
-    * ![](https://i.imgur.com/8TkUTLl.png) Void Storage
 
 *Not displayed if [HandyNotes: TravelGuide](https://www.curseforge.com/wow/addons/handynotes-travelguide) is already active.
 
