@@ -89,6 +89,8 @@ DB.nodes = {
     [58102771] = { icon="banker", npc=156479 },
     [58163602] = { icon="mail", label=mailbox },
     [65203600] = { icon="guildvault", label=guildvault },
+    [63833607] = { icon="vendor", npc=177829 },
+    [63583659] = { icon="vendor", npc=181681 },
 
     -- THE IDYLLIA
     [62935176] = { icon="mail", label=mailbox },
@@ -105,11 +107,13 @@ DB.nodes = {
     [56727171] = { icon="vendor", npc=173370 },
 
     -- THE ENCLAVE
-    [47867789] = { icon="vendor", npc=176067 }, -- Quartermaster
-    [47577721] = { icon="vendor", npc=176064 }, -- Quartermaster
-    [47087695] = { icon="vendor", npc=176065 }, -- Quartermaster
-    [46677736] = { icon="vendor", npc=176066 }, -- Quartermaster
-    [46227780] = { icon="vendor", npc=176368 }, -- Quartermaster
+    [47867789] = { icon="quartermaster", npc=176067 }, -- Quartermaster
+    [47577721] = { icon="quartermaster", npc=176064 }, -- Quartermaster
+    [47087695] = { icon="quartermaster", npc=176065 }, -- Quartermaster
+    [46677736] = { icon="quartermaster", npc=176066 }, -- Quartermaster
+    [46227780] = { icon="quartermaster", npc=176368 }, -- Quartermaster
+
+    -- [41397147] = { icon="bubble", npc=176368 }, -- LFR
 
     [35055815] = { icon="vendor", npc=164095 },
     [34445752] = { icon="vendor", npc=168011 },
@@ -134,6 +138,8 @@ DB.nodes = {
     [55735162] = { icon="tpplatform", label=RingFates },
     [49506073] = { icon="tpplatform", label=RingFates },
     [43375150] = { icon="tpplatform", label=RingFates },
+
+    [60027107] = { icon="vendor", npc=182864 },
 
     [67345157] = { icon="kyrian", label=C_Map.GetMapInfo(1533).name },
     [62183266] = { icon="necrolord", label=C_Map.GetMapInfo(1536).name },

@@ -78,7 +78,7 @@ local function CreateFlightMasterWaypoint()
         addon:debugmsg("Create Blizzard")
     elseif (C_AddOns.IsAddOnLoaded("TomTom") and dropdown == 2) then
         -- create TomTom waypoint
-        ns.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
+        ns.uid = TomTom:AddWaypoint(1671, 0.6089, 0.6870, {title = GetCreatureNameByID(162666)})
         fmaster_waypoint = 1
         addon:debugmsg("Create TomTom")
     elseif (dropdown == 3) then
@@ -86,7 +86,7 @@ local function CreateFlightMasterWaypoint()
         C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(1550, 47.02/100, 51.16/100))
         C_SuperTrack.SetSuperTrackedUserWaypoint(true)
         if (C_AddOns.IsAddOnLoaded("TomTom")) then
-            ns.uid = TomTom:AddWaypoint(1671, 61.91/100, 68.78/100, {title = GetCreatureNameByID(162666)})
+            ns.uid = TomTom:AddWaypoint(1671, 0.6089, 0.6870, {title = GetCreatureNameByID(162666)})
         end
         fmaster_waypoint = 1
         addon:debugmsg("Create Both")
@@ -178,7 +178,7 @@ local function GetIconScale(icon, picon)
     if (picon ~= nil and ns.db.picons_vendor and (icon == "vendor" or icon == "anvil")) then return ns.db["icon_scale_vendor"] * 0.75 end
     if (picon ~= nil and ns.db.picons_trainer and icon == "trainer") then return ns.db["icon_scale_trainer"] * 0.75 end
     -- anvil npcs are vendors
-    if (icon == "anvil") then
+    if (icon == "anvil" or icon == "quartermaster") then
         return ns.db["icon_scale_vendor"]
     -- combine the four zone gateway icons
     elseif (icon == "kyrian" or icon == "necrolord" or icon == "nightfae" or icon == "venthyr") then
@@ -190,7 +190,7 @@ end
 
 local function GetIconAlpha(icon)
     -- anvil npcs are vendors
-    if (icon == "anvil") then
+    if (icon == "anvil" or icon == "quartermaster") then
         return ns.db["icon_alpha_vendor"]
     -- combine the four zone gateway icons
     elseif (icon == "kyrian" or icon == "necrolord" or icon == "nightfae" or icon == "venthyr") then
@@ -462,7 +462,7 @@ do
             if (node.icon == "trainer" and not ns.db.show_trainer) then return false end
             if (node.icon == "portaltrainer" and not ns.db.show_portaltrainer) then return false end
             if (node.icon == "transmogrifier" and not ns.db.show_transmogrifier) then return false end
-            if ((node.icon == "vendor" or node.icon == "anvil") and not ns.db.show_vendor) then return false end
+            if ((node.icon == "vendor" or node.icon == "anvil" or node.icon == "quartermaster") and not ns.db.show_vendor) then return false end
             if ((node.icon == "kyrian" or node.icon == "necrolord" or node.icon == "nightfae" or node.icon == "venthyr") and not ns.db.show_zonegateway) then return false end
         end
         return true

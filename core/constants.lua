@@ -127,6 +127,7 @@ constants.icon = {
     transmogrifier  = "Interface\\MINIMAP\\TRACKING\\Transmogrifier",
     tpplatform      = "Interface\\MINIMAP\\TempleofKotmogu_ball_cyan",
     vendor          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\vendor",
+    quartermaster   = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\quartermaster",
 
     -- covenant icons
     kyrian          = "Interface\\AddOns\\"..FOLDER_NAME.."\\icons\\kyrian",
